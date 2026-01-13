@@ -223,6 +223,310 @@
           "type": "registry:ui"
         }
       ]
+    },
+    {
+      "name": "accordion",
+      "type": "registry:ui",
+      "title": "Accordion",
+      "description": "Vertically stacked interactive headings that reveal/hide content sections",
+      "dependencies": ["@radix-ui/react-accordion", "lucide-react"],
+      "registryDependencies": ["utils"],
+      "meta": { "tier": "free" },
+      "categories": ["layout"],
+      "files": [
+        {
+          "path": "src/components/ui/accordion.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "alert-dialog",
+      "type": "registry:ui",
+      "title": "Alert Dialog",
+      "description": "Modal dialog for important confirmations that interrupt user flow and require acknowledgment",
+      "dependencies": ["@radix-ui/react-alert-dialog"],
+      "registryDependencies": ["utils", "button"],
+      "meta": { "tier": "free" },
+      "categories": ["feedback"],
+      "files": [
+        {
+          "path": "src/components/ui/alert-dialog.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "alert",
+      "type": "registry:ui",
+      "title": "Alert",
+      "description": "Inline feedback component for displaying important messages with variant styles",
+      "dependencies": ["class-variance-authority"],
+      "registryDependencies": ["utils"],
+      "meta": { "tier": "free" },
+      "categories": ["feedback"],
+      "files": [
+        {
+          "path": "src/components/ui/alert.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "aspect-ratio",
+      "type": "registry:ui",
+      "title": "Aspect Ratio",
+      "description": "Container that maintains a consistent width-to-height ratio for responsive media",
+      "dependencies": ["@radix-ui/react-aspect-ratio"],
+      "registryDependencies": [],
+      "meta": { "tier": "free" },
+      "categories": ["layout"],
+      "files": [
+        {
+          "path": "src/components/ui/aspect-ratio.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "avatar",
+      "type": "registry:ui",
+      "title": "Avatar",
+      "description": "Profile image component with fallback initials for user representation",
+      "dependencies": ["@radix-ui/react-avatar"],
+      "registryDependencies": ["utils"],
+      "meta": { "tier": "free" },
+      "categories": ["data-display"],
+      "files": [
+        {
+          "path": "src/components/ui/avatar.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "badge",
+      "type": "registry:ui",
+      "title": "Badge",
+      "description": "Compact label for status, categories, or counts with multiple style variants",
+      "dependencies": ["@radix-ui/react-slot", "class-variance-authority"],
+      "registryDependencies": ["utils"],
+      "meta": { "tier": "free" },
+      "categories": ["data-display"],
+      "files": [
+        {
+          "path": "src/components/ui/badge.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "breadcrumb",
+      "type": "registry:ui",
+      "title": "Breadcrumb",
+      "description": "Navigation trail showing page hierarchy with customizable separators",
+      "dependencies": ["@radix-ui/react-slot", "lucide-react"],
+      "registryDependencies": ["utils"],
+      "meta": { "tier": "free" },
+      "categories": ["navigation"],
+      "files": [
+        {
+          "path": "src/components/ui/breadcrumb.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "button-group",
+      "type": "registry:ui",
+      "title": "Button Group",
+      "description": "Container for grouping related buttons with connected styling",
+      "dependencies": ["@radix-ui/react-slot", "class-variance-authority"],
+      "registryDependencies": ["utils", "separator"],
+      "meta": { "tier": "free" },
+      "categories": ["misc"],
+      "files": [
+        {
+          "path": "src/components/ui/button-group.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "calendar",
+      "type": "registry:ui",
+      "title": "Calendar",
+      "description": "Date picker component with single, multiple, and range selection modes",
+      "dependencies": ["react-day-picker", "lucide-react"],
+      "registryDependencies": ["utils", "button"],
+      "meta": { "tier": "free" },
+      "categories": ["data-display"],
+      "files": [
+        {
+          "path": "src/components/ui/calendar.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "card",
+      "type": "registry:ui",
+      "title": "Card",
+      "description": "Flexible container for grouping related content with header, body, and footer sections",
+      "dependencies": [],
+      "registryDependencies": ["utils"],
+      "meta": { "tier": "free" },
+      "categories": ["data-display"],
+      "files": [
+        {
+          "path": "src/components/ui/card.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "carousel",
+      "type": "registry:ui",
+      "title": "Carousel",
+      "description": "Scrollable content slider with navigation controls and keyboard support",
+      "dependencies": ["embla-carousel-react", "lucide-react"],
+      "registryDependencies": ["utils", "button"],
+      "meta": { "tier": "free" },
+      "categories": ["data-display"],
+      "files": [
+        {
+          "path": "src/components/ui/carousel.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "chart",
+      "type": "registry:ui",
+      "title": "Chart",
+      "description": "Data visualization wrapper with theming support for Recharts components",
+      "dependencies": ["recharts"],
+      "registryDependencies": ["utils"],
+      "meta": { "tier": "free" },
+      "categories": ["data-display"],
+      "files": [
+        {
+          "path": "src/components/ui/chart.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "checkbox",
+      "type": "registry:ui",
+      "title": "Checkbox",
+      "description": "Toggle input for binary choices with indeterminate state support",
+      "dependencies": ["@radix-ui/react-checkbox", "lucide-react"],
+      "registryDependencies": ["utils"],
+      "meta": { "tier": "free" },
+      "categories": ["form"],
+      "files": [
+        {
+          "path": "src/components/ui/checkbox.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "collapsible",
+      "type": "registry:ui",
+      "title": "Collapsible",
+      "description": "Expandable section that shows/hides content with animation",
+      "dependencies": ["@radix-ui/react-collapsible"],
+      "registryDependencies": [],
+      "meta": { "tier": "free" },
+      "categories": ["layout"],
+      "files": [
+        {
+          "path": "src/components/ui/collapsible.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "command",
+      "type": "registry:ui",
+      "title": "Command",
+      "description": "Command palette with search, filtering, and keyboard navigation for actions",
+      "dependencies": ["cmdk", "lucide-react"],
+      "registryDependencies": ["utils", "dialog"],
+      "meta": { "tier": "free" },
+      "categories": ["overlay"],
+      "files": [
+        {
+          "path": "src/components/ui/command.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "context-menu",
+      "type": "registry:ui",
+      "title": "Context Menu",
+      "description": "Right-click menu with nested submenus, checkboxes, and radio items",
+      "dependencies": ["@radix-ui/react-context-menu", "lucide-react"],
+      "registryDependencies": ["utils"],
+      "meta": { "tier": "free" },
+      "categories": ["overlay"],
+      "files": [
+        {
+          "path": "src/components/ui/context-menu.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "dialog",
+      "type": "registry:ui",
+      "title": "Dialog",
+      "description": "Modal overlay for focused interactions with customizable content",
+      "dependencies": ["@radix-ui/react-dialog", "lucide-react"],
+      "registryDependencies": ["utils"],
+      "meta": { "tier": "free" },
+      "categories": ["feedback"],
+      "files": [
+        {
+          "path": "src/components/ui/dialog.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "drawer",
+      "type": "registry:ui",
+      "title": "Drawer",
+      "description": "Slide-out panel from screen edges for mobile-friendly navigation and forms",
+      "dependencies": ["vaul"],
+      "registryDependencies": ["utils"],
+      "meta": { "tier": "free" },
+      "categories": ["feedback"],
+      "files": [
+        {
+          "path": "src/components/ui/drawer.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "dropdown-menu",
+      "type": "registry:ui",
+      "title": "Dropdown Menu",
+      "description": "Trigger-activated menu with submenus, checkboxes, and radio items",
+      "dependencies": ["@radix-ui/react-dropdown-menu", "lucide-react"],
+      "registryDependencies": ["utils"],
+      "meta": { "tier": "free" },
+      "categories": ["overlay"],
+      "files": [
+        {
+          "path": "src/components/ui/dropdown-menu.tsx",
+          "type": "registry:ui"
+        }
+      ]
     }
   ]
 }
