@@ -1382,6 +1382,38 @@
           "type": "registry:ui"
         }
       ]
+    },
+    {
+      "name": "page-header",
+      "type": "registry:ui",
+      "title": "Page Header",
+      "description": "Page header component with title, breadcrumbs, description, actions, badge, back link, and layout variants",
+      "dependencies": ["class-variance-authority", "lucide-react"],
+      "registryDependencies": ["utils", "badge", "breadcrumb", "heading", "paragraph"],
+      "meta": { "tier": "premium" },
+      "categories": ["layout"],
+      "files": [
+        {
+          "path": "registry/new-york/ui/page-header/page-header.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "section-wrapper",
+      "type": "registry:ui",
+      "title": "Section Wrapper",
+      "description": "Section wrapper component with title, description, actions, background, dividers, spacing, and layout variants",
+      "dependencies": ["class-variance-authority"],
+      "registryDependencies": ["utils", "card", "heading", "paragraph"],
+      "meta": { "tier": "premium" },
+      "categories": ["layout"],
+      "files": [
+        {
+          "path": "registry/new-york/ui/section-wrapper/section-wrapper.tsx",
+          "type": "registry:ui"
+        }
+      ]
     }
   ]
 }

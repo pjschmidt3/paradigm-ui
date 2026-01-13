@@ -71,6 +71,8 @@ export * from '../registry/new-york/ui/list/list'
 export * from '../registry/new-york/ui/callout/callout'
 export * from '../registry/new-york/ui/project-card/project-card'
 export * from '../registry/new-york/ui/timeline/timeline'
+export * from '../registry/new-york/ui/page-header/page-header'
+export * from '../registry/new-york/ui/section-wrapper/section-wrapper'
 
 // Registry Blocks
 export * from '../registry/new-york/blocks/pricing-table/pricing-table'

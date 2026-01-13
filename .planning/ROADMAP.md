@@ -69,17 +69,17 @@ Plans:
 - [x] 07-02: Content Display (Blockquote, List, Callout) — completed 2026-01-13
 - [x] 07-03: Navigation Helpers (LinkButton, NavLink, StepIndicator) — completed 2026-01-13
 
-#### Phase 8: Premium Blocks
+#### Phase 8: Premium Blocks — Complete
 
 **Goal**: Add composed blocks — marketing sections, portfolio components, page-level layouts (premium tier)
 **Depends on**: Phase 7
 **Research**: Unlikely (internal patterns)
-**Plans**: 2/3
+**Plans**: 3/3
 
 Plans:
 - [x] 08-01: Marketing Blocks (PricingTable, CTASection) — completed 2026-01-13
 - [x] 08-02: Portfolio Blocks (ProjectCard, Timeline) — completed 2026-01-13
-- [ ] 08-03: Page Layout Blocks (PageHeader, SectionWrapper)
+- [x] 08-03: Page Layout Blocks (PageHeader, SectionWrapper) — completed 2026-01-13
 
 #### Phase 9: Polish & Documentation
 
@@ -96,4 +96,4 @@ Plans:
 | Milestone | Phases | Plans | Status | Shipped |
 |-----------|--------|-------|--------|---------|
 | v1.0 MVP | 1-4 + 3.1 | 14/14 | Complete | 2026-01-13 |
-| v0.2.0 Library Expansion | 5-9 | 11/12 | In progress | - |
+| v0.2.0 Library Expansion | 5-9 | 12/13 | In progress | - |
