@@ -69,10 +69,13 @@ Plans:
 **Goal**: Build landing page showcasing components with live demos and tier comparison
 **Depends on**: Phase 3.1
 **Research**: Unlikely (internal UI work)
-**Plans**: TBD
+**Plans**: 4
 
 Plans:
-- [ ] 04-01: TBD
+- [x] 04-01: Project Foundation — Next.js setup + Paradigm UI integration
+- [ ] 04-02: Hero Section — Landing hero with interactive demo
+- [ ] 04-03: Component Showcase — Live demos with code tabs
+- [ ] 04-04: Tier & CTA — Free/premium comparison + getting started
 
 ## Progress
 
@@ -85,4 +88,4 @@ Phases execute in numeric order: 1 → 2 → 3 → 3.1 → 4
 | 2. Component Tiering | 4/4 | Complete | 2026-01-13 |
 | 3. Documentation & Polish | 2/2 | Complete | 2026-01-13 |
 | 3.1. Unit Test Coverage | 3/3 | Complete | 2026-01-13 |
-| 4. Marketing Site | 0/? | Not started | - |
+| 4. Marketing Site | 1/4 | In progress | - |
