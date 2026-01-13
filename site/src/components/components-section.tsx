@@ -23,7 +23,7 @@ export function ComponentsSection() {
             title="FlexRow"
             description="Horizontal flex container with gap and alignment"
             tier="free"
-            code={`import { FlexRow } from "@paradigm/flex-row"
+            code={`import { FlexRow } from "@/components/ui/flex-row"
 
 <FlexRow gap="md" justifyContent="between">
   <div>Item 1</div>
@@ -43,7 +43,7 @@ export function ComponentsSection() {
             title="Grid"
             description="CSS Grid with responsive columns"
             tier="free"
-            code={`import { Grid } from "@paradigm/grid"
+            code={`import { Grid } from "@/components/ui/grid"
 
 <Grid cols={3} gap="md">
   <div>Cell 1</div>
@@ -71,7 +71,7 @@ export function ComponentsSection() {
             title="Button"
             description="Flexible button with variants and icons"
             tier="premium"
-            code={`import { Button } from "@paradigm/button"
+            code={`import { Button } from "@/components/ui/button"
 
 <Button variant="default">Default</Button>
 <Button variant="outlined">Outlined</Button>
@@ -91,7 +91,7 @@ export function ComponentsSection() {
             title="Hero"
             description="Composite hero section with heading and social links"
             tier="premium"
-            code={`import { Hero } from "@paradigm/hero"
+            code={`import { Hero } from "@/components/ui/hero"
 
 <Hero
   heading="Welcome to Paradigm"
@@ -113,8 +113,8 @@ export function ComponentsSection() {
             title="Typography"
             description="Heading and Paragraph components"
             tier="free"
-            code={`import { Heading } from "@paradigm/heading"
-import { Paragraph } from "@paradigm/paragraph"
+            code={`import { Heading } from "@/components/ui/heading"
+import { Paragraph } from "@/components/ui/paragraph"
 
 <Heading level={2}>Page Title</Heading>
 <Paragraph>
@@ -134,7 +134,7 @@ import { Paragraph } from "@paradigm/paragraph"
             title="CodeBlock"
             description="Code display with copy-to-clipboard"
             tier="premium"
-            code={`import { CodeBlock } from "@paradigm/code-block"
+            code={`import { CodeBlock } from "@/components/ui/code-block"
 
 <CodeBlock
   code="const greeting = 'Hello, World!'"
