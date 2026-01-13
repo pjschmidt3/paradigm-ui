@@ -7,4 +7,6 @@ export type {
 export { useToggle } from './use-toggle'
 export type { UseToggleActions } from './use-toggle'
 
+export { useMediaQuery } from './use-media-query'
+
 export { useIsMobile } from './use-mobile'

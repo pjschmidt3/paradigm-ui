@@ -42,7 +42,7 @@ See [v1.0-ROADMAP.md](milestones/v1.0-ROADMAP.md) for full details.
 
 Plans:
 - [x] 05-01: Simple State Hooks (useDisclosure, useToggle) — completed 2026-01-13
-- [ ] 05-02: Media & Responsive Hooks (useMediaQuery, refactor useIsMobile)
+- [x] 05-02: Media & Responsive Hooks (useMediaQuery, refactor useIsMobile) — completed 2026-01-13
 - [ ] 05-03: DOM Interaction Hooks (useClickOutside, useScrollLock, useFocusTrap)
 - [ ] 05-04: Registry Integration (register hooks, finalize exports)
 
@@ -91,4 +91,4 @@ Plans:
 | Milestone | Phases | Plans | Status | Shipped |
 |-----------|--------|-------|--------|---------|
 | v1.0 MVP | 1-4 + 3.1 | 14/14 | Complete | 2026-01-13 |
-| v0.2.0 Library Expansion | 5-9 | 1/4+ | In progress | - |
+| v0.2.0 Library Expansion | 5-9 | 2/4+ | In progress | - |
