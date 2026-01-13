@@ -51,10 +51,11 @@ Plans:
 **Goal**: Improve existing components with variants not in shadcn (Button with inset icon, etc.)
 **Depends on**: Phase 5
 **Research**: Unlikely (internal patterns)
-**Plans**: TBD
+**Plans**: 2
 
 Plans:
-- [ ] 06-01: TBD
+- [x] 06-01: Button & Badge Enhancements (loading, pill, sizes) — completed 2026-01-13
+- [ ] 06-02: Avatar & Badge Polish (sizes, status, closable)
 
 #### Phase 7: Free Aesthetic Components
 
@@ -91,4 +92,4 @@ Plans:
 | Milestone | Phases | Plans | Status | Shipped |
 |-----------|--------|-------|--------|---------|
 | v1.0 MVP | 1-4 + 3.1 | 14/14 | Complete | 2026-01-13 |
-| v0.2.0 Library Expansion | 5-9 | 4/4+ | In progress | - |
+| v0.2.0 Library Expansion | 5-9 | 5/5+ | In progress | - |

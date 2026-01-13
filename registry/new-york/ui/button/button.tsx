@@ -136,6 +136,11 @@ export interface ButtonProps
   loading?: boolean
 
   /**
+   * Button shape - 'pill' for fully rounded corners
+   */
+  shape?: 'default' | 'pill'
+
+  /**
    * Custom loading spinner component
    */
   loadingSpinner?: ReactNode
@@ -176,6 +181,10 @@ export interface ButtonProps
  * @example
  * // Loading state
  * <Button loading>Saving...</Button>
+ *
+ * @example
+ * // Pill shape (fully rounded)
+ * <Button shape="pill">Tag</Button>
  */
 export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
   (
@@ -189,6 +198,7 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
       iconStart,
       loading = false,
       loadingSpinner,
+      shape,
       size,
       type = 'button',
       variant,
@@ -227,10 +237,15 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
         </svg>
       ))
 
+    // Apply shape class after CVA to ensure pill overrides size's rounded class
+    const shapeClass = shape === 'pill' ? 'rounded-full' : ''
+
     return (
       <button
+        aria-busy={loading || undefined}
         className={cn(
           buttonVariants({ size, variant }),
+          shapeClass,
           bgClass,
           colorClass,
           className

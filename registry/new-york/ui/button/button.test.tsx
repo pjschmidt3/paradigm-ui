@@ -58,6 +58,12 @@ describe('Button component', () => {
         'text-destructive-foreground'
       )
     })
+
+    it('should apply pill shape with rounded-full class', () => {
+      const { container } = render(<Button shape="pill">Pill</Button>)
+      const button = container.querySelector('button')
+      expect(button).toHaveClass('rounded-full')
+    })
   })
 
   describe('Sizes', () => {
@@ -272,6 +278,11 @@ describe('Button component', () => {
     it('should disable button when loading', () => {
       render(<Button loading>Loading</Button>)
       expect(screen.getByRole('button')).toBeDisabled()
+    })
+
+    it('should have aria-busy when loading', () => {
+      render(<Button loading>Loading</Button>)
+      expect(screen.getByRole('button')).toHaveAttribute('aria-busy', 'true')
     })
 
     it('should support custom loading spinner', () => {
