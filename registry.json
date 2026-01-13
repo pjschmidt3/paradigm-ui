@@ -815,6 +815,262 @@
           "type": "registry:ui"
         }
       ]
+    },
+    {
+      "name": "radio-group",
+      "type": "registry:ui",
+      "title": "Radio Group",
+      "description": "Radio button group for single-selection choices with accessible keyboard navigation",
+      "dependencies": ["@radix-ui/react-radio-group", "lucide-react"],
+      "registryDependencies": ["utils"],
+      "meta": { "tier": "free" },
+      "categories": ["form"],
+      "files": [
+        {
+          "path": "src/components/ui/radio-group.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "resizable",
+      "type": "registry:ui",
+      "title": "Resizable",
+      "description": "Resizable panel groups with draggable handles for adjustable layouts",
+      "dependencies": ["react-resizable-panels"],
+      "registryDependencies": ["utils"],
+      "meta": { "tier": "free" },
+      "categories": ["layout"],
+      "files": [
+        {
+          "path": "src/components/ui/resizable.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "scroll-area",
+      "type": "registry:ui",
+      "title": "Scroll Area",
+      "description": "Custom scrollbar container with consistent cross-browser appearance",
+      "dependencies": ["@radix-ui/react-scroll-area"],
+      "registryDependencies": ["utils"],
+      "meta": { "tier": "free" },
+      "categories": ["layout"],
+      "files": [
+        {
+          "path": "src/components/ui/scroll-area.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "select",
+      "type": "registry:ui",
+      "title": "Select",
+      "description": "Dropdown select menu with search, groups, and customizable triggers",
+      "dependencies": ["@radix-ui/react-select", "lucide-react"],
+      "registryDependencies": ["utils"],
+      "meta": { "tier": "free" },
+      "categories": ["form"],
+      "files": [
+        {
+          "path": "src/components/ui/select.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "sheet",
+      "type": "registry:ui",
+      "title": "Sheet",
+      "description": "Slide-in panel overlay from any screen edge with customizable positioning",
+      "dependencies": ["@radix-ui/react-dialog", "lucide-react"],
+      "registryDependencies": ["utils"],
+      "meta": { "tier": "free" },
+      "categories": ["overlay"],
+      "files": [
+        {
+          "path": "src/components/ui/sheet.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "skeleton",
+      "type": "registry:ui",
+      "title": "Skeleton",
+      "description": "Placeholder loading animation for content that is still loading",
+      "dependencies": [],
+      "registryDependencies": ["utils"],
+      "meta": { "tier": "free" },
+      "categories": ["feedback"],
+      "files": [
+        {
+          "path": "src/components/ui/skeleton.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "slider",
+      "type": "registry:ui",
+      "title": "Slider",
+      "description": "Range slider input with single or multiple thumbs for numeric values",
+      "dependencies": ["@radix-ui/react-slider"],
+      "registryDependencies": ["utils"],
+      "meta": { "tier": "free" },
+      "categories": ["form"],
+      "files": [
+        {
+          "path": "src/components/ui/slider.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "sonner",
+      "type": "registry:ui",
+      "title": "Sonner",
+      "description": "Toast notification system with theming and multiple notification types",
+      "dependencies": ["sonner", "next-themes", "lucide-react"],
+      "registryDependencies": [],
+      "meta": { "tier": "free" },
+      "categories": ["feedback"],
+      "files": [
+        {
+          "path": "src/components/ui/sonner.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "spinner",
+      "type": "registry:ui",
+      "title": "Spinner",
+      "description": "Animated loading spinner indicator with accessible status label",
+      "dependencies": ["lucide-react"],
+      "registryDependencies": ["utils"],
+      "meta": { "tier": "free" },
+      "categories": ["feedback"],
+      "files": [
+        {
+          "path": "src/components/ui/spinner.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "switch",
+      "type": "registry:ui",
+      "title": "Switch",
+      "description": "Toggle switch for binary on/off states with smooth animation",
+      "dependencies": ["@radix-ui/react-switch"],
+      "registryDependencies": ["utils"],
+      "meta": { "tier": "free" },
+      "categories": ["form"],
+      "files": [
+        {
+          "path": "src/components/ui/switch.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "table",
+      "type": "registry:ui",
+      "title": "Table",
+      "description": "Data table components with header, body, footer, and responsive scrolling",
+      "dependencies": [],
+      "registryDependencies": ["utils"],
+      "meta": { "tier": "free" },
+      "categories": ["data-display"],
+      "files": [
+        {
+          "path": "src/components/ui/table.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabs",
+      "type": "registry:ui",
+      "title": "Tabs",
+      "description": "Tab navigation with panels for organizing content into switchable views",
+      "dependencies": ["@radix-ui/react-tabs"],
+      "registryDependencies": ["utils"],
+      "meta": { "tier": "free" },
+      "categories": ["navigation"],
+      "files": [
+        {
+          "path": "src/components/ui/tabs.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "toggle",
+      "type": "registry:ui",
+      "title": "Toggle",
+      "description": "Two-state button that can be toggled on or off with visual feedback",
+      "dependencies": ["@radix-ui/react-toggle", "class-variance-authority"],
+      "registryDependencies": ["utils"],
+      "meta": { "tier": "free" },
+      "categories": ["form"],
+      "files": [
+        {
+          "path": "src/components/ui/toggle.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "toggle-group",
+      "type": "registry:ui",
+      "title": "Toggle Group",
+      "description": "Group of toggle buttons with single or multiple selection support",
+      "dependencies": ["@radix-ui/react-toggle-group"],
+      "registryDependencies": ["utils", "toggle"],
+      "meta": { "tier": "free" },
+      "categories": ["form"],
+      "files": [
+        {
+          "path": "src/components/ui/toggle-group.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tooltip",
+      "type": "registry:ui",
+      "title": "Tooltip",
+      "description": "Popup hint that appears on hover or focus with customizable positioning",
+      "dependencies": ["@radix-ui/react-tooltip"],
+      "registryDependencies": ["utils"],
+      "meta": { "tier": "free" },
+      "categories": ["overlay"],
+      "files": [
+        {
+          "path": "src/components/ui/tooltip.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "sidebar",
+      "type": "registry:ui",
+      "title": "Sidebar",
+      "description": "Collapsible navigation sidebar with responsive mobile drawer and keyboard shortcuts",
+      "dependencies": ["@radix-ui/react-slot", "class-variance-authority", "lucide-react"],
+      "registryDependencies": ["utils", "shadcn-button", "input", "separator", "sheet", "skeleton", "tooltip"],
+      "meta": { "tier": "free" },
+      "categories": ["navigation"],
+      "files": [
+        {
+          "path": "src/components/ui/sidebar.tsx",
+          "type": "registry:ui"
+        }
+      ]
     }
   ]
 }

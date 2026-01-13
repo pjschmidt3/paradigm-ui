@@ -15,8 +15,8 @@ None
 - Decimal phases (2.1, 2.2): Urgent insertions (marked with INSERTED)
 
 - [x] **Phase 1: Registry Foundation** - Set up shadcn registry structure and JSON schema
-- [ ] **Phase 2: Component Tiering** (In progress) - Separate free vs premium components with metadata
-- [ ] **Phase 3: Documentation & Polish** - Component docs, examples, and production readiness
+- [x] **Phase 2: Component Tiering** - Separate free vs premium components with metadata
+- [ ] **Phase 3: Documentation & Polish** (Next) - Component docs, examples, and production readiness
 - [ ] **Phase 4: Marketing Site** - Landing page with component showcase
 
 ## Phase Details
@@ -41,7 +41,7 @@ Plans:
 - [x] 02-01: Tier Metadata — Add tier and category metadata to existing 14 registry items
 - [x] 02-02: Atomic Components A-D — Register 19 atomic components from src/components/ui
 - [x] 02-03: Atomic Components E-P — Register 18 atomic components (15 + 3 dependencies)
-- [ ] 02-04: Atomic Components R-T — Register 18 atomic components, complete phase
+- [x] 02-04: Atomic Components R-T — Register 17 atomic components, complete phase
 
 ### Phase 3: Documentation & Polish
 **Goal**: Create comprehensive component documentation with usage examples and prop references
@@ -69,6 +69,6 @@ Phases execute in numeric order: 1 → 2 → 3 → 4
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Registry Foundation | 1/1 | Complete | 2026-01-13 |
-| 2. Component Tiering | 3/4 | In progress | - |
+| 2. Component Tiering | 4/4 | Complete | 2026-01-13 |
 | 3. Documentation & Polish | 0/? | Not started | - |
 | 4. Marketing Site | 0/? | Not started | - |
