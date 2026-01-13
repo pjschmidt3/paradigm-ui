@@ -1,4 +1,5 @@
 import { HeroSection } from "@/components/hero-section"
+import { ComponentsSection } from "@/components/components-section"
 
 export default function Home() {
   return (
@@ -7,14 +8,7 @@ export default function Home() {
       <HeroSection />
 
       {/* Components Section */}
-      <section id="components" className="py-24 md:py-32">
-        <div className="mx-auto max-w-6xl px-6">
-          <h2 className="text-3xl font-semibold mb-8">Components</h2>
-          <p className="text-zinc-600 dark:text-zinc-400">
-            Component showcase coming soon...
-          </p>
-        </div>
-      </section>
+      <ComponentsSection />
 
       {/* Pricing Section */}
       <section id="pricing" className="py-24 md:py-32 bg-zinc-50 dark:bg-zinc-900/50">

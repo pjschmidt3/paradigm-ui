@@ -225,6 +225,22 @@
       ]
     },
     {
+      "name": "code-block",
+      "type": "registry:ui",
+      "title": "Code Block",
+      "description": "Syntax-highlighted code display component with copy-to-clipboard functionality and language badge",
+      "dependencies": [],
+      "registryDependencies": ["utils"],
+      "meta": { "tier": "premium" },
+      "categories": ["data-display"],
+      "files": [
+        {
+          "path": "registry/new-york/ui/code-block/code-block.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "accordion",
       "type": "registry:ui",
       "title": "Accordion",
