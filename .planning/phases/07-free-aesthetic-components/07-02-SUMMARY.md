@@ -4,11 +4,11 @@
 
 ## Performance
 
-- **Duration:** 5 min
+- **Duration:** 10 min
 - **Started:** 2026-01-13T21:19:02Z
 - **Completed:** 2026-01-13T21:24:13Z
 - **Tasks:** 2
-- **Files modified:** 9
+- **Files modified:** 15
 
 ## Accomplishments
 
@@ -16,14 +16,21 @@
 - List component with bullet, numbered, check (green icons), and none variants plus spacing options
 - Callout component with info, warning, success, error, and note variants with appropriate icons
 - All components registered as free tier in registry.json
+- Unit tests (44 passing) and Storybook stories for all 3 components
 
 ## Files Created/Modified
 
 - `registry/new-york/ui/blockquote/blockquote.tsx` - Blockquote component with CVA variants
+- `registry/new-york/ui/blockquote/blockquote.test.tsx` - Unit tests (10 tests)
+- `registry/new-york/ui/blockquote/blockquote.stories.tsx` - Storybook stories
 - `registry/new-york/ui/blockquote/index.ts` - Barrel export
 - `registry/new-york/ui/list/list.tsx` - List and ListItem components with CVA variants
+- `registry/new-york/ui/list/list.test.tsx` - Unit tests (20 tests)
+- `registry/new-york/ui/list/list.stories.tsx` - Storybook stories
 - `registry/new-york/ui/list/index.ts` - Barrel export
 - `registry/new-york/ui/callout/callout.tsx` - Callout component with icon variants
+- `registry/new-york/ui/callout/callout.test.tsx` - Unit tests (14 tests)
+- `registry/new-york/ui/callout/callout.stories.tsx` - Storybook stories
 - `registry/new-york/ui/callout/index.ts` - Barrel export
 - `registry/new-york/ui/index.tsx` - Added exports for all 3 new components
 - `registry.json` - Added 3 free-tier registry entries
