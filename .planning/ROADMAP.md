@@ -17,7 +17,7 @@ None
 - [x] **Phase 1: Registry Foundation** - Set up shadcn registry structure and JSON schema
 - [x] **Phase 2: Component Tiering** - Separate free vs premium components with metadata
 - [x] **Phase 3: Documentation & Polish** - Component docs, examples, and production readiness
-- [ ] **Phase 3.1: Unit Test Coverage** - Add comprehensive unit tests for all registry components (INSERTED)
+- [x] **Phase 3.1: Unit Test Coverage** - Add comprehensive unit tests for all registry components (INSERTED)
 - [ ] **Phase 4: Marketing Site** - Landing page with component showcase
 
 ## Phase Details
@@ -63,7 +63,7 @@ Plans:
 Plans:
 - [x] 3.1-01: Typography Tests — Unit tests for Heading and Paragraph components
 - [x] 3.1-02: Animation Tests — Unit tests for SocialLinks and Appear components (with motion mocks)
-- [ ] 3.1-03: Composite & Verification — Unit tests for Hero component + full suite verification
+- [x] 3.1-03: Composite & Verification — Unit tests for Hero component + full suite verification
 
 ### Phase 4: Marketing Site
 **Goal**: Build landing page showcasing components with live demos and tier comparison
@@ -84,5 +84,5 @@ Phases execute in numeric order: 1 → 2 → 3 → 3.1 → 4
 | 1. Registry Foundation | 1/1 | Complete | 2026-01-13 |
 | 2. Component Tiering | 4/4 | Complete | 2026-01-13 |
 | 3. Documentation & Polish | 2/2 | Complete | 2026-01-13 |
-| 3.1. Unit Test Coverage | 2/3 | In progress | - |
+| 3.1. Unit Test Coverage | 3/3 | Complete | 2026-01-13 |
 | 4. Marketing Site | 0/? | Not started | - |
