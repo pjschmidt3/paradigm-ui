@@ -527,6 +527,294 @@
           "type": "registry:ui"
         }
       ]
+    },
+    {
+      "name": "separator",
+      "type": "registry:ui",
+      "title": "Separator",
+      "description": "Visual divider between content sections with horizontal or vertical orientation",
+      "dependencies": ["@radix-ui/react-separator"],
+      "registryDependencies": ["utils"],
+      "meta": { "tier": "free" },
+      "categories": ["layout"],
+      "files": [
+        {
+          "path": "src/components/ui/separator.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "textarea",
+      "type": "registry:ui",
+      "title": "Textarea",
+      "description": "Multi-line text input with auto-sizing and consistent styling",
+      "dependencies": [],
+      "registryDependencies": ["utils"],
+      "meta": { "tier": "free" },
+      "categories": ["form"],
+      "files": [
+        {
+          "path": "src/components/ui/textarea.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "shadcn-button",
+      "type": "registry:ui",
+      "title": "ShadCN Button",
+      "description": "Standard shadcn button component with variants and sizes",
+      "dependencies": ["@radix-ui/react-slot", "class-variance-authority"],
+      "registryDependencies": ["utils"],
+      "meta": { "tier": "free" },
+      "categories": ["form"],
+      "files": [
+        {
+          "path": "src/components/ui/button.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "empty",
+      "type": "registry:ui",
+      "title": "Empty",
+      "description": "Empty state component with icon, title, description, and action areas for displaying placeholder content",
+      "dependencies": ["class-variance-authority"],
+      "registryDependencies": ["utils"],
+      "meta": { "tier": "free" },
+      "categories": ["feedback"],
+      "files": [
+        {
+          "path": "src/components/ui/empty.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "field",
+      "type": "registry:ui",
+      "title": "Field",
+      "description": "Form field wrapper components for labels, descriptions, errors, and layout with horizontal/vertical orientation",
+      "dependencies": ["class-variance-authority"],
+      "registryDependencies": ["utils", "label", "separator"],
+      "meta": { "tier": "free" },
+      "categories": ["form"],
+      "files": [
+        {
+          "path": "src/components/ui/field.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "form",
+      "type": "registry:ui",
+      "title": "Form",
+      "description": "React Hook Form integration with accessible form controls, labels, and error messages",
+      "dependencies": ["react-hook-form", "@radix-ui/react-slot"],
+      "registryDependencies": ["utils", "label"],
+      "meta": { "tier": "free" },
+      "categories": ["form"],
+      "files": [
+        {
+          "path": "src/components/ui/form.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "hover-card",
+      "type": "registry:ui",
+      "title": "Hover Card",
+      "description": "Popover that appears on hover with preview content and smooth animations",
+      "dependencies": ["@radix-ui/react-hover-card"],
+      "registryDependencies": ["utils"],
+      "meta": { "tier": "free" },
+      "categories": ["overlay"],
+      "files": [
+        {
+          "path": "src/components/ui/hover-card.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "input-group",
+      "type": "registry:ui",
+      "title": "Input Group",
+      "description": "Compound input with addons, buttons, and text for enhanced form inputs",
+      "dependencies": ["class-variance-authority"],
+      "registryDependencies": ["utils", "shadcn-button", "input", "textarea"],
+      "meta": { "tier": "free" },
+      "categories": ["form"],
+      "files": [
+        {
+          "path": "src/components/ui/input-group.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "input-otp",
+      "type": "registry:ui",
+      "title": "Input OTP",
+      "description": "One-time password input with separate slots, separators, and caret animation",
+      "dependencies": ["input-otp", "lucide-react"],
+      "registryDependencies": ["utils"],
+      "meta": { "tier": "free" },
+      "categories": ["form"],
+      "files": [
+        {
+          "path": "src/components/ui/input-otp.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "input",
+      "type": "registry:ui",
+      "title": "Input",
+      "description": "Single-line text input with file upload support and validation states",
+      "dependencies": [],
+      "registryDependencies": ["utils"],
+      "meta": { "tier": "free" },
+      "categories": ["form"],
+      "files": [
+        {
+          "path": "src/components/ui/input.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "item",
+      "type": "registry:ui",
+      "title": "Item",
+      "description": "Flexible list item component with media, content, title, description, and actions",
+      "dependencies": ["@radix-ui/react-slot", "class-variance-authority"],
+      "registryDependencies": ["utils", "separator"],
+      "meta": { "tier": "free" },
+      "categories": ["data-display"],
+      "files": [
+        {
+          "path": "src/components/ui/item.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "kbd",
+      "type": "registry:ui",
+      "title": "Kbd",
+      "description": "Keyboard shortcut display component for showing key combinations",
+      "dependencies": [],
+      "registryDependencies": ["utils"],
+      "meta": { "tier": "free" },
+      "categories": ["data-display"],
+      "files": [
+        {
+          "path": "src/components/ui/kbd.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "label",
+      "type": "registry:ui",
+      "title": "Label",
+      "description": "Accessible form label that associates with inputs and handles disabled states",
+      "dependencies": ["@radix-ui/react-label"],
+      "registryDependencies": ["utils"],
+      "meta": { "tier": "free" },
+      "categories": ["form"],
+      "files": [
+        {
+          "path": "src/components/ui/label.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "menubar",
+      "type": "registry:ui",
+      "title": "Menubar",
+      "description": "Desktop application menu bar with dropdowns, submenus, and keyboard navigation",
+      "dependencies": ["@radix-ui/react-menubar", "lucide-react"],
+      "registryDependencies": ["utils"],
+      "meta": { "tier": "free" },
+      "categories": ["navigation"],
+      "files": [
+        {
+          "path": "src/components/ui/menubar.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "navigation-menu",
+      "type": "registry:ui",
+      "title": "Navigation Menu",
+      "description": "Site navigation with dropdown content panels and animated viewport",
+      "dependencies": ["@radix-ui/react-navigation-menu", "class-variance-authority", "lucide-react"],
+      "registryDependencies": ["utils"],
+      "meta": { "tier": "free" },
+      "categories": ["navigation"],
+      "files": [
+        {
+          "path": "src/components/ui/navigation-menu.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "pagination",
+      "type": "registry:ui",
+      "title": "Pagination",
+      "description": "Page navigation with previous/next links, page numbers, and ellipsis",
+      "dependencies": ["lucide-react"],
+      "registryDependencies": ["utils", "shadcn-button"],
+      "meta": { "tier": "free" },
+      "categories": ["navigation"],
+      "files": [
+        {
+          "path": "src/components/ui/pagination.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "popover",
+      "type": "registry:ui",
+      "title": "Popover",
+      "description": "Floating panel triggered by click with customizable positioning and animations",
+      "dependencies": ["@radix-ui/react-popover"],
+      "registryDependencies": ["utils"],
+      "meta": { "tier": "free" },
+      "categories": ["overlay"],
+      "files": [
+        {
+          "path": "src/components/ui/popover.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "progress",
+      "type": "registry:ui",
+      "title": "Progress",
+      "description": "Progress indicator bar showing completion percentage with smooth transitions",
+      "dependencies": ["@radix-ui/react-progress"],
+      "registryDependencies": ["utils"],
+      "meta": { "tier": "free" },
+      "categories": ["feedback"],
+      "files": [
+        {
+          "path": "src/components/ui/progress.tsx",
+          "type": "registry:ui"
+        }
+      ]
     }
   ]
 }
