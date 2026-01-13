@@ -69,6 +69,8 @@ export * from './components/ui/tooltip'
 export * from '../registry/new-york/ui/blockquote/blockquote'
 export * from '../registry/new-york/ui/list/list'
 export * from '../registry/new-york/ui/callout/callout'
+export * from '../registry/new-york/ui/project-card/project-card'
+export * from '../registry/new-york/ui/timeline/timeline'
 
 // Registry Blocks
 export * from '../registry/new-york/blocks/pricing-table/pricing-table'

@@ -1350,6 +1350,38 @@
           "type": "registry:block"
         }
       ]
+    },
+    {
+      "name": "project-card",
+      "type": "registry:ui",
+      "title": "Project Card",
+      "description": "Portfolio project card with image, tech stack tags, action links, and layout variants (default, horizontal, overlay)",
+      "dependencies": ["class-variance-authority"],
+      "registryDependencies": ["utils", "card", "badge", "link-button"],
+      "meta": { "tier": "premium" },
+      "categories": ["portfolio", "cards"],
+      "files": [
+        {
+          "path": "registry/new-york/ui/project-card/project-card.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "timeline",
+      "type": "registry:ui",
+      "title": "Timeline",
+      "description": "Chronological timeline with vertical/horizontal orientation, status indicators, and alternating layout option",
+      "dependencies": ["class-variance-authority"],
+      "registryDependencies": ["utils"],
+      "meta": { "tier": "premium" },
+      "categories": ["portfolio", "data-display"],
+      "files": [
+        {
+          "path": "registry/new-york/ui/timeline/timeline.tsx",
+          "type": "registry:ui"
+        }
+      ]
     }
   ]
 }

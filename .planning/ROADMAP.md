@@ -74,11 +74,11 @@ Plans:
 **Goal**: Add composed blocks — marketing sections, portfolio components, page-level layouts (premium tier)
 **Depends on**: Phase 7
 **Research**: Unlikely (internal patterns)
-**Plans**: 1/3
+**Plans**: 2/3
 
 Plans:
 - [x] 08-01: Marketing Blocks (PricingTable, CTASection) — completed 2026-01-13
-- [ ] 08-02: Portfolio Blocks (ProjectCard, Timeline)
+- [x] 08-02: Portfolio Blocks (ProjectCard, Timeline) — completed 2026-01-13
 - [ ] 08-03: Page Layout Blocks (PageHeader, SectionWrapper)
 
 #### Phase 9: Polish & Documentation
@@ -96,4 +96,4 @@ Plans:
 | Milestone | Phases | Plans | Status | Shipped |
 |-----------|--------|-------|--------|---------|
 | v1.0 MVP | 1-4 + 3.1 | 14/14 | Complete | 2026-01-13 |
-| v0.2.0 Library Expansion | 5-9 | 10/12 | In progress | - |
+| v0.2.0 Library Expansion | 5-9 | 11/12 | In progress | - |
