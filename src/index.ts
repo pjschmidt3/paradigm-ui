@@ -64,3 +64,8 @@ export * from './components/ui/textarea'
 export * from './components/ui/toggle'
 export * from './components/ui/toggle-group'
 export * from './components/ui/tooltip'
+
+// Registry Components
+export * from '../registry/new-york/ui/blockquote/blockquote'
+export * from '../registry/new-york/ui/list/list'
+export * from '../registry/new-york/ui/callout/callout'

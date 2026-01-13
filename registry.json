@@ -1222,6 +1222,54 @@
           "type": "registry:ui"
         }
       ]
+    },
+    {
+      "name": "blockquote",
+      "type": "registry:ui",
+      "title": "Blockquote",
+      "description": "Styled blockquote component with variants for rich text presentation",
+      "dependencies": ["class-variance-authority"],
+      "registryDependencies": ["utils"],
+      "meta": { "tier": "free" },
+      "categories": ["typography"],
+      "files": [
+        {
+          "path": "registry/new-york/ui/blockquote/blockquote.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "list",
+      "type": "registry:ui",
+      "title": "List",
+      "description": "Styled list component with bullet, numbered, check, and plain variants",
+      "dependencies": ["class-variance-authority", "lucide-react"],
+      "registryDependencies": ["utils"],
+      "meta": { "tier": "free" },
+      "categories": ["typography", "data-display"],
+      "files": [
+        {
+          "path": "registry/new-york/ui/list/list.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "callout",
+      "type": "registry:ui",
+      "title": "Callout",
+      "description": "Alert-style callout component with info, warning, success, error, and note variants",
+      "dependencies": ["class-variance-authority", "lucide-react"],
+      "registryDependencies": ["utils"],
+      "meta": { "tier": "free" },
+      "categories": ["feedback"],
+      "files": [
+        {
+          "path": "registry/new-york/ui/callout/callout.tsx",
+          "type": "registry:ui"
+        }
+      ]
     }
   ]
 }

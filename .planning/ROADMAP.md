@@ -66,7 +66,7 @@ Plans:
 
 Plans:
 - [x] 07-01: Card Variants (ProfileCard, StatsCard, TestimonialCard, FeatureCard) — completed 2026-01-13
-- [ ] 07-02: Content Display (Blockquote, List, Callout)
+- [x] 07-02: Content Display (Blockquote, List, Callout) — completed 2026-01-13
 - [ ] 07-03: Navigation Helpers (LinkButton, NavLink, StepIndicator)
 
 #### Phase 8: Premium Blocks
@@ -94,4 +94,4 @@ Plans:
 | Milestone | Phases | Plans | Status | Shipped |
 |-----------|--------|-------|--------|---------|
 | v1.0 MVP | 1-4 + 3.1 | 14/14 | Complete | 2026-01-13 |
-| v0.2.0 Library Expansion | 5-9 | 7/10+ | In progress | - |
+| v0.2.0 Library Expansion | 5-9 | 8/10+ | In progress | - |
