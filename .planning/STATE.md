@@ -5,15 +5,17 @@
 See: .planning/PROJECT.md (updated 2026-01-13)
 
 **Core value:** Best-in-class component quality and DX — composable, type-safe, and production-ready components that developers actually want to use and pay for.
-**Current focus:** Planning next milestone
+**Current focus:** Library expansion with hooks, utilities, and aesthetic components
 
 ## Current Position
 
-Milestone: v1.0 MVP shipped
-Status: Ready for next milestone
-Last activity: 2026-01-13 — v1.0 milestone complete
+Milestone: v0.2.0 Library Expansion
+Phase: 5 of 9 (Building Blocks & Utilities)
+Plan: Not started
+Status: Ready to plan
+Last activity: 2026-01-13 — Milestone v0.2.0 created
 
-Progress: v1.0 ██████████ 100%
+Progress: v0.2.0 ░░░░░░░░░░ 0%
 
 ## Performance Metrics (v1.0)
 
@@ -38,16 +40,27 @@ Progress: v1.0 ██████████ 100%
 
 Full decision log in PROJECT.md Key Decisions table with outcomes.
 
+**v0.2.0 Tiering Strategy:** Simple/building blocks = free, Composed blocks = premium (mirrors shadcn's free components vs paid blocks model)
+
 ### Deferred Issues
 
 None.
 
 ### Blockers/Concerns
 
-None — milestone shipped successfully.
+None.
+
+### Roadmap Evolution
+
+- Milestone v0.2.0 created: Library expansion, 5 phases (Phase 5-9)
+  - Phase 5: Building Blocks & Utilities (hooks, helpers, primitives)
+  - Phase 6: Enhanced Components (improved variants)
+  - Phase 7: Free Aesthetic Components (cards, navigation, content)
+  - Phase 8: Premium Blocks (marketing sections, portfolio, page layouts)
+  - Phase 9: Polish & Documentation (Storybook, tests, READMEs)
 
 ## Session Continuity
 
-Last session: 2026-01-13T15:55:00Z
-Stopped at: v1.0 milestone archived
+Last session: 2026-01-13
+Stopped at: Milestone v0.2.0 initialization
 Resume file: None

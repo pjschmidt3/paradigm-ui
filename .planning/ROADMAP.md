@@ -7,6 +7,7 @@ Transform the existing component library into a distributable shadcn registry wi
 ## Milestones
 
 - [v1.0 MVP](milestones/v1.0-ROADMAP.md) (Phases 1-4 + 3.1) — SHIPPED 2026-01-13
+- 🚧 **v0.2.0 Library Expansion** - Phases 5-9 (in progress)
 
 ## Completed Milestones
 
@@ -26,8 +27,65 @@ See [v1.0-ROADMAP.md](milestones/v1.0-ROADMAP.md) for full details.
 
 </details>
 
+### 🚧 v0.2.0 Library Expansion (In Progress)
+
+**Milestone Goal:** Expand component library with building blocks, hooks, utilities, and aesthetic components before monetization
+
+**Tiering Strategy:** Simple/building blocks = free, Composed blocks = premium
+
+#### Phase 5: Building Blocks & Utilities
+
+**Goal**: Add hooks (useDisclosure, useToggle, useMediaQuery, useClickOutside, useScrollLock, useFocusTrap), utility helpers, and primitive components
+**Depends on**: v1.0 MVP complete
+**Research**: Unlikely (internal patterns)
+**Plans**: TBD
+
+Plans:
+- [ ] 05-01: TBD (run /gsd:plan-phase 5 to break down)
+
+#### Phase 6: Enhanced Components
+
+**Goal**: Improve existing components with variants not in shadcn (Button with inset icon, etc.)
+**Depends on**: Phase 5
+**Research**: Unlikely (internal patterns)
+**Plans**: TBD
+
+Plans:
+- [ ] 06-01: TBD
+
+#### Phase 7: Free Aesthetic Components
+
+**Goal**: Add simple aesthetic components — cards, navigation, content display (free tier)
+**Depends on**: Phase 6
+**Research**: Unlikely (internal patterns)
+**Plans**: TBD
+
+Plans:
+- [ ] 07-01: TBD
+
+#### Phase 8: Premium Blocks
+
+**Goal**: Add composed blocks — marketing sections, portfolio components, page-level layouts (premium tier)
+**Depends on**: Phase 7
+**Research**: Unlikely (internal patterns)
+**Plans**: TBD
+
+Plans:
+- [ ] 08-01: TBD
+
+#### Phase 9: Polish & Documentation
+
+**Goal**: Storybook stories, README updates, tests for all new components
+**Depends on**: Phase 8
+**Research**: Unlikely (internal patterns)
+**Plans**: TBD
+
+Plans:
+- [ ] 09-01: TBD
+
 ## Progress
 
 | Milestone | Phases | Plans | Status | Shipped |
 |-----------|--------|-------|--------|---------|
 | v1.0 MVP | 1-4 + 3.1 | 14/14 | Complete | 2026-01-13 |
+| v0.2.0 Library Expansion | 5-9 | 0/? | In progress | - |
