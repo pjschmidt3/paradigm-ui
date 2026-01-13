@@ -64,6 +64,11 @@ export function useFocusTrap<T extends HTMLElement>(
       const firstElement = focusableElements[0]
       const lastElement = focusableElements[focusableElements.length - 1]
 
+      if (!firstElement || !lastElement) {
+        event.preventDefault()
+        return
+      }
+
       // Shift+Tab on first element -> go to last
       if (event.shiftKey && document.activeElement === firstElement) {
         event.preventDefault()
@@ -96,8 +101,9 @@ export function useFocusTrap<T extends HTMLElement>(
 
     // Focus first focusable element
     const focusableElements = getFocusableElements(ref.current)
-    if (focusableElements.length > 0) {
-      focusableElements[0].focus()
+    const firstElement = focusableElements[0]
+    if (firstElement) {
+      firstElement.focus()
     }
 
     // Add keydown listener for tab trapping
