@@ -14,7 +14,7 @@ None
 - Integer phases (1, 2, 3): Planned milestone work
 - Decimal phases (2.1, 2.2): Urgent insertions (marked with INSERTED)
 
-- [ ] **Phase 1: Registry Foundation** - Set up shadcn registry structure and JSON schema
+- [x] **Phase 1: Registry Foundation** - Set up shadcn registry structure and JSON schema
 - [ ] **Phase 2: Component Tiering** - Separate free vs premium components with metadata
 - [ ] **Phase 3: Documentation & Polish** - Component docs, examples, and production readiness
 - [ ] **Phase 4: Marketing Site** - Landing page with component showcase
@@ -26,10 +26,10 @@ None
 **Depends on**: Nothing (first phase)
 **Research**: Likely (external integration)
 **Research topics**: shadcn registry JSON schema format, CLI compatibility requirements, registry endpoint structure
-**Plans**: TBD
+**Plans**: 1
 
 Plans:
-- [ ] 01-01: TBD
+- [x] 01-01: Registry Infrastructure — Complete registry.json with all component items
 
 ### Phase 2: Component Tiering
 **Goal**: Organize existing components into free/premium tiers with appropriate metadata
@@ -65,7 +65,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Registry Foundation | 0/? | Not started | - |
+| 1. Registry Foundation | 1/1 | Complete | 2026-01-13 |
 | 2. Component Tiering | 0/? | Not started | - |
 | 3. Documentation & Polish | 0/? | Not started | - |
 | 4. Marketing Site | 0/? | Not started | - |

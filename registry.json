@@ -1,0 +1,200 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry.json",
+  "name": "paradigm-ui",
+  "homepage": "https://paradigm-ui.dev",
+  "items": [
+    {
+      "name": "utils",
+      "type": "registry:lib",
+      "title": "Utilities",
+      "description": "Core utility functions including cn() for className merging and responsive helpers",
+      "dependencies": ["clsx", "tailwind-merge"],
+      "files": [
+        {
+          "path": "src/lib/utils.ts",
+          "type": "registry:lib"
+        }
+      ]
+    },
+    {
+      "name": "box-types",
+      "type": "registry:lib",
+      "title": "Box Types",
+      "description": "Shared TypeScript types for Box component including responsive values and spacing",
+      "dependencies": [],
+      "files": [
+        {
+          "path": "src/types/shared/box.ts",
+          "type": "registry:lib"
+        }
+      ]
+    },
+    {
+      "name": "helper-types",
+      "type": "registry:lib",
+      "title": "Helper Types",
+      "description": "Shared TypeScript types including sizing, flex props, and polymorphic component types",
+      "dependencies": ["csstype"],
+      "files": [
+        {
+          "path": "src/types/shared/helpers.ts",
+          "type": "registry:lib"
+        }
+      ]
+    },
+    {
+      "name": "box",
+      "type": "registry:ui",
+      "title": "Box",
+      "description": "Flexible container component with semantic spacing, sizing, and styling props. Supports responsive values and polymorphic rendering.",
+      "dependencies": [],
+      "registryDependencies": ["utils", "box-types"],
+      "files": [
+        {
+          "path": "registry/new-york/ui/box.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "flex",
+      "type": "registry:ui",
+      "title": "Flex",
+      "description": "Flexbox container with gap, alignment, and direction props mapped to Tailwind classes",
+      "dependencies": [],
+      "registryDependencies": ["utils", "helper-types"],
+      "files": [
+        {
+          "path": "registry/new-york/ui/flex.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "flex-row",
+      "type": "registry:ui",
+      "title": "Flex Row",
+      "description": "Horizontal flex container - convenience wrapper around Flex with direction=row",
+      "dependencies": [],
+      "registryDependencies": ["flex", "helper-types"],
+      "files": [
+        {
+          "path": "registry/new-york/ui/flex-row.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "flex-col",
+      "type": "registry:ui",
+      "title": "Flex Col",
+      "description": "Vertical flex container - convenience wrapper around Flex with direction=col",
+      "dependencies": [],
+      "registryDependencies": ["flex", "helper-types"],
+      "files": [
+        {
+          "path": "registry/new-york/ui/flex-col.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "grid",
+      "type": "registry:ui",
+      "title": "Grid",
+      "description": "CSS Grid container with cols, rows, gap, and alignment props mapped to Tailwind classes",
+      "dependencies": [],
+      "registryDependencies": ["utils", "helper-types"],
+      "files": [
+        {
+          "path": "registry/new-york/ui/grid.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "heading",
+      "type": "registry:ui",
+      "title": "Heading",
+      "description": "Semantic heading component (h1-h5) with consistent typography styles",
+      "dependencies": [],
+      "registryDependencies": ["utils"],
+      "files": [
+        {
+          "path": "registry/new-york/ui/heading.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "paragraph",
+      "type": "registry:ui",
+      "title": "Paragraph",
+      "description": "Typography component for body text with consistent styling",
+      "dependencies": [],
+      "registryDependencies": ["utils"],
+      "files": [
+        {
+          "path": "registry/new-york/ui/paragraph.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "button",
+      "type": "registry:ui",
+      "title": "Button",
+      "description": "Flexible button component with multiple variants (default, outlined, ghost, link, destructive), sizes, icons, and loading state",
+      "dependencies": ["class-variance-authority"],
+      "registryDependencies": ["utils", "helper-types"],
+      "files": [
+        {
+          "path": "registry/new-york/ui/button.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "social-links",
+      "type": "registry:ui",
+      "title": "Social Links",
+      "description": "Animated social media link icons with hover effects. Supports Facebook, YouTube, Instagram, GitHub, LinkedIn, Twitter/X, and Discord.",
+      "dependencies": ["react-icons", "motion"],
+      "registryDependencies": ["utils"],
+      "files": [
+        {
+          "path": "registry/new-york/ui/social-links.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "hero",
+      "type": "registry:ui",
+      "title": "Hero",
+      "description": "Hero section component with heading, subheading, description, and optional social links",
+      "dependencies": [],
+      "registryDependencies": ["utils", "heading", "paragraph", "social-links"],
+      "files": [
+        {
+          "path": "registry/new-york/ui/hero.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "appear",
+      "type": "registry:ui",
+      "title": "Appear",
+      "description": "Animation wrapper component that adds fade-in and slide-up entrance animation using Motion",
+      "dependencies": ["motion"],
+      "registryDependencies": ["helper-types"],
+      "files": [
+        {
+          "path": "registry/new-york/ui/appear.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    }
+  ]
+}
