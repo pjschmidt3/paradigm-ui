@@ -1270,6 +1270,54 @@
           "type": "registry:ui"
         }
       ]
+    },
+    {
+      "name": "link-button",
+      "type": "registry:ui",
+      "title": "Link Button",
+      "description": "Anchor element styled like a button with icon support and external link handling",
+      "dependencies": ["class-variance-authority", "lucide-react"],
+      "registryDependencies": ["utils", "button"],
+      "meta": { "tier": "free" },
+      "categories": ["navigation"],
+      "files": [
+        {
+          "path": "registry/new-york/ui/link-button/link-button.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "nav-link",
+      "type": "registry:ui",
+      "title": "Nav Link",
+      "description": "Navigation link with active/inactive states, icon support, and notification badges",
+      "dependencies": ["class-variance-authority", "lucide-react"],
+      "registryDependencies": ["utils"],
+      "meta": { "tier": "free" },
+      "categories": ["navigation"],
+      "files": [
+        {
+          "path": "registry/new-york/ui/nav-link/nav-link.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "step-indicator",
+      "type": "registry:ui",
+      "title": "Step Indicator",
+      "description": "Visual progress indicator for multi-step processes with dots, numbers, or icons variants",
+      "dependencies": ["class-variance-authority", "lucide-react"],
+      "registryDependencies": ["utils"],
+      "meta": { "tier": "free" },
+      "categories": ["navigation"],
+      "files": [
+        {
+          "path": "registry/new-york/ui/step-indicator/step-indicator.tsx",
+          "type": "registry:ui"
+        }
+      ]
     }
   ]
 }
