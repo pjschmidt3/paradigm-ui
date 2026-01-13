@@ -38,10 +38,13 @@ See [v1.0-ROADMAP.md](milestones/v1.0-ROADMAP.md) for full details.
 **Goal**: Add hooks (useDisclosure, useToggle, useMediaQuery, useClickOutside, useScrollLock, useFocusTrap), utility helpers, and primitive components
 **Depends on**: v1.0 MVP complete
 **Research**: Unlikely (internal patterns)
-**Plans**: TBD
+**Plans**: 4
 
 Plans:
-- [ ] 05-01: TBD (run /gsd:plan-phase 5 to break down)
+- [x] 05-01: Simple State Hooks (useDisclosure, useToggle) — completed 2026-01-13
+- [ ] 05-02: Media & Responsive Hooks (useMediaQuery, refactor useIsMobile)
+- [ ] 05-03: DOM Interaction Hooks (useClickOutside, useScrollLock, useFocusTrap)
+- [ ] 05-04: Registry Integration (register hooks, finalize exports)
 
 #### Phase 6: Enhanced Components
 
@@ -88,4 +91,4 @@ Plans:
 | Milestone | Phases | Plans | Status | Shipped |
 |-----------|--------|-------|--------|---------|
 | v1.0 MVP | 1-4 + 3.1 | 14/14 | Complete | 2026-01-13 |
-| v0.2.0 Library Expansion | 5-9 | 0/? | In progress | - |
+| v0.2.0 Library Expansion | 5-9 | 1/4+ | In progress | - |
