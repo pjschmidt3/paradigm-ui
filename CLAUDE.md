@@ -86,9 +86,22 @@ registry/new-york/
     └── cta-section/
 ```
 
-When blocks import from UI components, use relative paths:
+### Path Aliases
+
+Use these TypeScript path aliases for cleaner imports:
+
+| Alias | Resolves To |
+|-------|-------------|
+| `@registry/*` | `registry/new-york/ui/*` |
+| `@blocks/*` | `registry/new-york/blocks/*` |
+| `@/*` | Project root |
+
 ```ts
-// In registry/new-york/blocks/pricing-table/pricing-table.tsx
+// Preferred - using aliases
+import { Button } from '@registry/button'
+import { PricingTable } from '@blocks/pricing-table'
+
+// Avoid - relative paths
 import { Button } from '../../ui/button'
 ```
 

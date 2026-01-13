@@ -13,7 +13,7 @@ import {
   CardTitle
 } from '@/src/components/ui/card'
 
-import { Button } from '../../ui/button'
+import { Button } from '@registry/button'
 
 const pricingTierVariants = cva(
   ['relative', 'flex', 'flex-col'],

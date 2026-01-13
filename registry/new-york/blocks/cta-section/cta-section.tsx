@@ -4,9 +4,9 @@ import { cva, type VariantProps } from 'class-variance-authority'
 
 import { cn } from '@/src/lib/utils'
 
-import { Heading } from '../../ui/heading'
-import { Paragraph } from '../../ui/paragraph'
-import { Button } from '../../ui/button'
+import { Heading } from '@registry/heading'
+import { Paragraph } from '@registry/paragraph'
+import { Button } from '@registry/button'
 
 const ctaSectionVariants = cva(
   ['py-16', 'px-6'],

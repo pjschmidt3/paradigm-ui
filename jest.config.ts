@@ -18,6 +18,8 @@ const config: Config = {
   extensionsToTreatAsEsm: ['.ts', '.tsx'],
   moduleNameMapper: {
     '^@/(.*)$': '<rootDir>/$1',
+    '^@registry/(.*)$': '<rootDir>/registry/new-york/ui/$1',
+    '^@blocks/(.*)$': '<rootDir>/registry/new-york/blocks/$1',
   },
   setupFilesAfterEnv: ['<rootDir>/src/setupTests.ts'],
   testMatch: ['**/__tests__/**/*.test.{ts,tsx}', '**/*.test.{ts,tsx}'],

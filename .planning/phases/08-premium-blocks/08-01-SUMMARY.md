@@ -8,7 +8,7 @@
 - **Started:** 2026-01-13T21:45:19Z
 - **Completed:** 2026-01-13T21:50:11Z
 - **Tasks:** 3
-- **Files modified:** 10
+- **Files modified:** 12
 
 ## Accomplishments
 
@@ -29,15 +29,18 @@
 - `registry/new-york/blocks/index.tsx` - Blocks barrel export
 - `registry.json` - Added entries with type: "registry:block", tier: "premium"
 - `src/index.ts` - Added package exports
-- `CLAUDE.md` - Documented UI vs Blocks convention
+- `CLAUDE.md` - Documented UI vs Blocks convention and path aliases
 - `.planning/codebase/STRUCTURE.md` - Added blocks directory documentation
+- `tsconfig.json` - Added `@blocks/*` path alias
+- `jest.config.ts` - Added `@blocks/*` moduleNameMapper
 
 ## Decisions Made
 
 - **Blocks directory structure**: Following shadcn convention, premium blocks go in `registry/new-york/blocks/` instead of `ui/` (documented in CLAUDE.md)
+- **Path aliases**: Added `@blocks/*` alias to match `@registry/*` pattern for cleaner imports
 - Used CVA for PricingTier popular variant styling (ring-2 ring-primary highlight)
 - CTASection uses different button variants based on background (outlined for primary bg)
-- Blocks import UI components via relative paths (`../../ui/button`)
+- Blocks import UI components via `@registry/*` alias (e.g., `@registry/button`)
 
 ## Deviations from Plan
 
