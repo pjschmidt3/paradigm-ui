@@ -1158,6 +1158,70 @@
           "type": "registry:ui"
         }
       ]
+    },
+    {
+      "name": "profile-card",
+      "type": "registry:ui",
+      "title": "Profile Card",
+      "description": "Card variant for displaying user profiles with avatar, name, title, bio, and action buttons",
+      "dependencies": [],
+      "registryDependencies": ["utils", "card", "avatar"],
+      "meta": { "tier": "free" },
+      "categories": ["cards"],
+      "files": [
+        {
+          "path": "registry/new-york/ui/profile-card/profile-card.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "stats-card",
+      "type": "registry:ui",
+      "title": "Stats Card",
+      "description": "Card variant for displaying statistics with large value, label, optional icon, and trend indicator",
+      "dependencies": ["lucide-react"],
+      "registryDependencies": ["utils", "card"],
+      "meta": { "tier": "free" },
+      "categories": ["cards"],
+      "files": [
+        {
+          "path": "registry/new-york/ui/stats-card/stats-card.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "testimonial-card",
+      "type": "registry:ui",
+      "title": "Testimonial Card",
+      "description": "Card variant for displaying customer testimonials with quote, rating, and author info",
+      "dependencies": ["lucide-react"],
+      "registryDependencies": ["utils", "card", "avatar"],
+      "meta": { "tier": "free" },
+      "categories": ["cards"],
+      "files": [
+        {
+          "path": "registry/new-york/ui/testimonial-card/testimonial-card.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "feature-card",
+      "type": "registry:ui",
+      "title": "Feature Card",
+      "description": "Card variant for highlighting features with icon, title, description, and optional link",
+      "dependencies": ["lucide-react"],
+      "registryDependencies": ["utils", "card"],
+      "meta": { "tier": "free" },
+      "categories": ["cards"],
+      "files": [
+        {
+          "path": "registry/new-york/ui/feature-card/feature-card.tsx",
+          "type": "registry:ui"
+        }
+      ]
     }
   ]
 }

@@ -57,15 +57,17 @@ Plans:
 - [x] 06-01: Button & Badge Enhancements (loading, pill, sizes) — completed 2026-01-13
 - [x] 06-02: Avatar & Badge Polish (sizes, status, closable) — completed 2026-01-13
 
-#### Phase 7: Free Aesthetic Components
+#### Phase 7: Free Aesthetic Components — In progress
 
 **Goal**: Add simple aesthetic components — cards, navigation, content display (free tier)
 **Depends on**: Phase 6
 **Research**: Unlikely (internal patterns)
-**Plans**: TBD
+**Plans**: 3
 
 Plans:
-- [ ] 07-01: TBD
+- [x] 07-01: Card Variants (ProfileCard, StatsCard, TestimonialCard, FeatureCard) — completed 2026-01-13
+- [ ] 07-02: Content Display (Blockquote, List, Callout)
+- [ ] 07-03: Navigation Helpers (LinkButton, NavLink, StepIndicator)
 
 #### Phase 8: Premium Blocks
 
@@ -92,4 +94,4 @@ Plans:
 | Milestone | Phases | Plans | Status | Shipped |
 |-----------|--------|-------|--------|---------|
 | v1.0 MVP | 1-4 + 3.1 | 14/14 | Complete | 2026-01-13 |
-| v0.2.0 Library Expansion | 5-9 | 6/6+ | In progress | - |
+| v0.2.0 Library Expansion | 5-9 | 7/10+ | In progress | - |
