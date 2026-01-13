@@ -49,6 +49,77 @@
       ]
     },
     {
+      "name": "use-disclosure",
+      "type": "registry:lib",
+      "title": "useDisclosure",
+      "description": "Hook for managing boolean open/close state with callbacks. Ideal for modals, menus, and accordions.",
+      "dependencies": [],
+      "meta": { "tier": "free" },
+      "categories": ["hooks"],
+      "files": [{ "path": "src/hooks/use-disclosure.ts", "type": "registry:lib" }]
+    },
+    {
+      "name": "use-toggle",
+      "type": "registry:lib",
+      "title": "useToggle",
+      "description": "Simple hook for boolean toggle state with familiar useState-like API.",
+      "dependencies": [],
+      "meta": { "tier": "free" },
+      "categories": ["hooks"],
+      "files": [{ "path": "src/hooks/use-toggle.ts", "type": "registry:lib" }]
+    },
+    {
+      "name": "use-media-query",
+      "type": "registry:lib",
+      "title": "useMediaQuery",
+      "description": "Hook for responsive behavior based on CSS media queries.",
+      "dependencies": [],
+      "meta": { "tier": "free" },
+      "categories": ["hooks"],
+      "files": [{ "path": "src/hooks/use-media-query.ts", "type": "registry:lib" }]
+    },
+    {
+      "name": "use-mobile",
+      "type": "registry:lib",
+      "title": "useIsMobile",
+      "description": "Hook for detecting mobile viewport (< 768px). Built on useMediaQuery.",
+      "dependencies": [],
+      "registryDependencies": ["use-media-query"],
+      "meta": { "tier": "free" },
+      "categories": ["hooks"],
+      "files": [{ "path": "src/hooks/use-mobile.ts", "type": "registry:lib" }]
+    },
+    {
+      "name": "use-click-outside",
+      "type": "registry:lib",
+      "title": "useClickOutside",
+      "description": "Hook for detecting clicks outside an element. Essential for dropdowns and modals.",
+      "dependencies": [],
+      "meta": { "tier": "free" },
+      "categories": ["hooks"],
+      "files": [{ "path": "src/hooks/use-click-outside.ts", "type": "registry:lib" }]
+    },
+    {
+      "name": "use-scroll-lock",
+      "type": "registry:lib",
+      "title": "useScrollLock",
+      "description": "Hook for preventing body scroll. Use with modals and drawers.",
+      "dependencies": [],
+      "meta": { "tier": "free" },
+      "categories": ["hooks"],
+      "files": [{ "path": "src/hooks/use-scroll-lock.ts", "type": "registry:lib" }]
+    },
+    {
+      "name": "use-focus-trap",
+      "type": "registry:lib",
+      "title": "useFocusTrap",
+      "description": "Hook for trapping keyboard focus within a container. Essential for accessible modals.",
+      "dependencies": [],
+      "meta": { "tier": "free" },
+      "categories": ["hooks"],
+      "files": [{ "path": "src/hooks/use-focus-trap.ts", "type": "registry:lib" }]
+    },
+    {
       "name": "box",
       "type": "registry:ui",
       "title": "Box",

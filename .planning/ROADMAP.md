@@ -44,7 +44,7 @@ Plans:
 - [x] 05-01: Simple State Hooks (useDisclosure, useToggle) — completed 2026-01-13
 - [x] 05-02: Media & Responsive Hooks (useMediaQuery, refactor useIsMobile) — completed 2026-01-13
 - [x] 05-03: DOM Interaction Hooks (useClickOutside, useScrollLock, useFocusTrap) — completed 2026-01-13
-- [ ] 05-04: Registry Integration (register hooks, finalize exports)
+- [x] 05-04: Registry Integration (register hooks, finalize exports) — completed 2026-01-13
 
 #### Phase 6: Enhanced Components
 
@@ -91,4 +91,4 @@ Plans:
 | Milestone | Phases | Plans | Status | Shipped |
 |-----------|--------|-------|--------|---------|
 | v1.0 MVP | 1-4 + 3.1 | 14/14 | Complete | 2026-01-13 |
-| v0.2.0 Library Expansion | 5-9 | 3/4+ | In progress | - |
+| v0.2.0 Library Expansion | 5-9 | 4/4+ | In progress | - |
