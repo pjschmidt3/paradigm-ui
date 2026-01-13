@@ -81,19 +81,19 @@ Plans:
 - [x] 08-02: Portfolio Blocks (ProjectCard, Timeline) — completed 2026-01-13
 - [x] 08-03: Page Layout Blocks (PageHeader, SectionWrapper) — completed 2026-01-13
 
-#### Phase 9: Polish & Documentation
+#### Phase 9: Polish & Documentation — Complete
 
 **Goal**: Storybook stories, README updates, tests for all new components
 **Depends on**: Phase 8
 **Research**: Unlikely (internal patterns)
-**Plans**: TBD
+**Plans**: 1/1
 
 Plans:
-- [ ] 09-01: TBD
+- [x] 09-01: CodeBlock tests/stories, Hook stories, README update — completed 2026-01-13
 
 ## Progress
 
 | Milestone | Phases | Plans | Status | Shipped |
 |-----------|--------|-------|--------|---------|
 | v1.0 MVP | 1-4 + 3.1 | 14/14 | Complete | 2026-01-13 |
-| v0.2.0 Library Expansion | 5-9 | 12/13 | In progress | - |
+| v0.2.0 Library Expansion | 5-9 | 13/13 | Complete | 2026-01-13 |

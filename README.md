@@ -1,6 +1,6 @@
 # Paradigm UI
 
-A modern, composable React component library built on Flexbox primitives and shadcn/ui architecture. 67 production-ready components with free and premium tiers.
+A modern, composable React component library built on Flexbox primitives and shadcn/ui architecture. 90+ production-ready components, blocks, and hooks with free and premium tiers.
 
 ## Installation
 
@@ -12,31 +12,68 @@ npx shadcn@latest add https://paradigm-ui.dev/registry.json/heading
 
 # Install a premium component
 npx shadcn@latest add https://paradigm-ui.dev/registry.json/flex
+
+# Install a hook
+npx shadcn@latest add https://paradigm-ui.dev/registry.json/use-disclosure
 ```
 
 Dependencies are automatically resolved - installing `hero` will also install `heading`, `paragraph`, and `social-links`.
 
 ## Available Components
 
-### Free Tier (58 components)
+### Free Tier (68 components)
 
 All standard UI components are free:
 
 **Layout**: accordion, aspect-ratio, card, collapsible, resizable, scroll-area, separator
-**Form**: checkbox, input, input-otp, label, radio-group, select, slider, switch, textarea, toggle, toggle-group
-**Data Display**: avatar, badge, calendar, carousel, chart, kbd, table
-**Feedback**: alert, alert-dialog, dialog, drawer, empty, progress, skeleton, sonner, spinner
-**Navigation**: breadcrumb, menubar, navigation-menu, pagination, sidebar, tabs
-**Overlay**: command, context-menu, dropdown-menu, hover-card, popover, sheet, tooltip
-**Typography**: heading, paragraph
 
-### Premium Tier (9 components)
+**Form**: checkbox, input, input-otp, input-group, label, radio-group, select, slider, switch, textarea, toggle, toggle-group, field, form
+
+**Data Display**: avatar, badge, calendar, carousel, chart, kbd, table, item
+
+**Feedback**: alert, alert-dialog, dialog, drawer, empty, progress, skeleton, sonner, spinner
+
+**Navigation**: breadcrumb, menubar, navigation-menu, pagination, sidebar, tabs
+
+**Overlay**: command, context-menu, dropdown-menu, hover-card, popover, sheet, tooltip
+
+**Typography**: heading, paragraph, blockquote, list
+
+**Card Variants**: profile-card, stats-card, testimonial-card, feature-card
+
+**Content Display**: callout
+
+**Navigation Components**: link-button, nav-link, steps
+
+### Premium Tier (16 components)
 
 Enhanced components with advanced features:
 
-**Layout**: box, flex, flex-row, flex-col, grid
+**Layout Primitives**: box, flex, flex-row, flex-col, grid
+
 **Animation**: appear, social-links
-**Composite**: hero, button (advanced)
+
+**Composite**: hero, button (advanced), code-block
+
+**Portfolio**: project-card, timeline
+
+**Page Layout**: page-header, section
+
+**Marketing Blocks**: pricing-table, cta-section
+
+### Hooks (7 hooks)
+
+Reusable React hooks for common UI patterns:
+
+| Hook | Description |
+|------|-------------|
+| `useDisclosure` | Boolean open/close state with callbacks. Ideal for modals, menus, accordions. |
+| `useToggle` | Simple boolean toggle with familiar useState-like API. |
+| `useMediaQuery` | Responsive behavior based on CSS media queries. |
+| `useIsMobile` | Detects mobile viewport (< 768px). Built on useMediaQuery. |
+| `useClickOutside` | Detects clicks outside an element. Essential for dropdowns and modals. |
+| `useScrollLock` | Prevents body scroll. Use with modals and drawers. |
+| `useFocusTrap` | Traps keyboard focus within a container. Essential for accessible modals. |
 
 ## Quick Start
 
@@ -86,6 +123,34 @@ export function AnimatedSection() {
 }
 ```
 
+### Using Hooks
+
+```tsx
+import { useDisclosure } from '@/hooks/use-disclosure'
+import { useFocusTrap } from '@/hooks/use-focus-trap'
+import { useScrollLock } from '@/hooks/use-scroll-lock'
+
+export function Modal() {
+  const { isOpen, open, close } = useDisclosure()
+  const modalRef = useRef<HTMLDivElement>(null)
+
+  useFocusTrap(modalRef, isOpen)
+  useScrollLock(isOpen)
+
+  return (
+    <>
+      <button onClick={open}>Open Modal</button>
+      {isOpen && (
+        <div ref={modalRef} role="dialog">
+          <h2>Modal Content</h2>
+          <button onClick={close}>Close</button>
+        </div>
+      )}
+    </>
+  )
+}
+```
+
 ## Interactive Documentation
 
 View all components with live examples:
@@ -110,6 +175,9 @@ npm install
 
 # Run Storybook
 npm run storybook
+
+# Run tests
+npm test
 
 # Validate registry
 node scripts/validate-registry.js
