@@ -1318,6 +1318,38 @@
           "type": "registry:ui"
         }
       ]
+    },
+    {
+      "name": "pricing-table",
+      "type": "registry:block",
+      "title": "Pricing Table",
+      "description": "Responsive pricing table component with tier cards, feature lists, popular badge, and CTA buttons",
+      "dependencies": ["class-variance-authority", "lucide-react"],
+      "registryDependencies": ["utils", "card", "badge", "button"],
+      "meta": { "tier": "premium" },
+      "categories": ["marketing"],
+      "files": [
+        {
+          "path": "registry/new-york/blocks/pricing-table/pricing-table.tsx",
+          "type": "registry:block"
+        }
+      ]
+    },
+    {
+      "name": "cta-section",
+      "type": "registry:block",
+      "title": "CTA Section",
+      "description": "Call-to-action section with 3 layout variants (default, centered, split) and 4 background options",
+      "dependencies": ["class-variance-authority"],
+      "registryDependencies": ["utils", "heading", "paragraph", "button"],
+      "meta": { "tier": "premium" },
+      "categories": ["marketing"],
+      "files": [
+        {
+          "path": "registry/new-york/blocks/cta-section/cta-section.tsx",
+          "type": "registry:block"
+        }
+      ]
     }
   ]
 }

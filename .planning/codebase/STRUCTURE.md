@@ -69,10 +69,17 @@ paradigm-ui/
 - Key files: `cn()`, `buildSizingClass()`, `processSpacingProp()`, responsive handlers
 
 **registry/new-york/ui/**
-- Purpose: Composite/layout components for documentation
-- Contains: 23 `.tsx` files + stories + tests
+- Purpose: Primitive and simple composed components
+- Contains: UI components with stories + tests
 - Key files: `box.tsx`, `flex.tsx`, `button.tsx`, `grid.tsx`, `hero.tsx`, `appear.tsx`
-- Subdirectories: `__tests__/` for unit tests
+- Registered with `type: "registry:ui"` in registry.json
+
+**registry/new-york/blocks/**
+- Purpose: Composed page sections (marketing, dashboards, layouts)
+- Contains: Premium blocks with stories + tests
+- Key files: `pricing-table/`, `cta-section/`
+- Registered with `type: "registry:block"` in registry.json
+- Imports from ui/ using relative paths: `../../ui/button`
 
 **.storybook/**
 - Purpose: Component documentation and development
@@ -126,15 +133,23 @@ paradigm-ui/
 
 ## Where to Add New Code
 
-**New UI Component:**
+**New UI Component (primitives, atoms):**
 - Implementation: `src/components/ui/{component}.tsx`
 - Types: Add to component file or `src/types/shared/`
 - Tests: `registry/new-york/ui/__tests__/{component}.test.tsx`
 
-**New Layout/Composite Component:**
-- Implementation: `registry/new-york/ui/{component}.tsx`
-- Story: `registry/new-york/ui/{component}.stories.tsx`
-- Tests: `registry/new-york/ui/__tests__/{component}.test.tsx`
+**New Registry UI Component (simple composed):**
+- Implementation: `registry/new-york/ui/{component}/{component}.tsx`
+- Story: `registry/new-york/ui/{component}/{component}.stories.tsx`
+- Tests: `registry/new-york/ui/{component}/{component}.test.tsx`
+- Registry: Add entry with `type: "registry:ui"`
+
+**New Block (composed sections, premium):**
+- Implementation: `registry/new-york/blocks/{block}/{block}.tsx`
+- Story: `registry/new-york/blocks/{block}/{block}.stories.tsx`
+- Tests: `registry/new-york/blocks/{block}/{block}.test.tsx`
+- Registry: Add entry with `type: "registry:block"`
+- Import ui components via relative paths: `../../ui/button`
 
 **New Hook:**
 - Implementation: `src/hooks/use-{name}.ts`

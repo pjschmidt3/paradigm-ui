@@ -60,4 +60,36 @@ registry/new-york/ui/my-component/
 └── my-component.stories.tsx # Storybook stories
 ```
 
+### UI Components vs Blocks (shadcn convention)
+
+Following [shadcn's blocks convention](https://ui.shadcn.com/docs/blocks), this registry distinguishes between:
+
+**UI Components** (`registry/new-york/ui/`)
+- Primitive, atomic components (Button, Card, Badge, Input)
+- Simple composed components (Heading, Paragraph, Flex)
+- Registered with `type: "registry:ui"`
+
+**Blocks** (`registry/new-york/blocks/`)
+- Composed page sections (PricingTable, CTASection, Hero sections)
+- Marketing components, dashboard layouts, complex forms
+- Typically premium tier
+- Registered with `type: "registry:block"`
+
+```
+registry/new-york/
+├── ui/           # Primitive components
+│   ├── button/
+│   ├── card/
+│   └── heading/
+└── blocks/       # Composed sections (premium)
+    ├── pricing-table/
+    └── cta-section/
+```
+
+When blocks import from UI components, use relative paths:
+```ts
+// In registry/new-york/blocks/pricing-table/pricing-table.tsx
+import { Button } from '../../ui/button'
+```
+
 ### File Structure/Code Arrangement
