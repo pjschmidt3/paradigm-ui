@@ -5,18 +5,17 @@
 See: .planning/PROJECT.md (updated 2026-01-13)
 
 **Core value:** Best-in-class component quality and DX — composable, type-safe, and production-ready components that developers actually want to use and pay for.
-**Current focus:** Phase 4 — Marketing Site
+**Current focus:** Planning next milestone
 
 ## Current Position
 
-Phase: 4 of 4 (Marketing Site)
-Plan: 4 of 4 in current phase
-Status: Milestone Complete
-Last activity: 2026-01-13 — Completed 04-04-PLAN.md
+Milestone: v1.0 MVP shipped
+Status: Ready for next milestone
+Last activity: 2026-01-13 — v1.0 milestone complete
 
-Progress: ██████████ 100%
+Progress: v1.0 ██████████ 100%
 
-## Performance Metrics
+## Performance Metrics (v1.0)
 
 **Velocity:**
 - Total plans completed: 14
@@ -33,23 +32,11 @@ Progress: ██████████ 100%
 | 3.1. Unit Test Coverage | 3/3 | 9 min | 3 min |
 | 4. Marketing Site | 4/4 | 19 min | 4.75 min |
 
-**Recent Trend:**
-- Last 5 plans: 3 min, 4 min, 4 min, 5 min, 6 min
-- Trend: —
-
 ## Accumulated Context
 
 ### Decisions
 
-Decisions are logged in PROJECT.md Key Decisions table.
-Recent decisions affecting current work:
-
-- **Separate type files as lib items**: Registered `box-types` and `helper-types` as `registry:lib` items for proper type installation
-- **shadcn-button naming**: Registered src/components/ui/button.tsx as "shadcn-button" to differentiate from premium button
-
-### Roadmap Evolution
-
-- Phase 3.1 inserted after Phase 3: Unit Test Coverage (URGENT) — comprehensive tests for all registry components before marketing site launch
+Full decision log in PROJECT.md Key Decisions table with outcomes.
 
 ### Deferred Issues
 
@@ -57,10 +44,10 @@ None.
 
 ### Blockers/Concerns
 
-Build produces warnings about "use client" directives and React UMD globals (cosmetic, does not block functionality).
+None — milestone shipped successfully.
 
 ## Session Continuity
 
-Last session: 2026-01-13T15:50:11Z
-Stopped at: Completed 04-04-PLAN.md — Milestone 1 Complete
+Last session: 2026-01-13T15:55:00Z
+Stopped at: v1.0 milestone archived
 Resume file: None

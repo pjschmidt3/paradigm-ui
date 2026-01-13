@@ -20,14 +20,18 @@ Best-in-class component quality and DX — composable, type-safe, and production
 - [x] TypeScript with strict mode — existing
 - [x] Storybook documentation — existing
 - [x] Rollup build producing CJS + ESM + type definitions — existing
+- [x] shadcn registry distribution (CLI-compatible) — v1.0
+- [x] Free/premium component tier separation (58 free, 9 premium) — v1.0
+- [x] Marketing site with component showcase — v1.0
+- [x] Registry JSON schema and metadata — v1.0
+- [x] Component documentation (Storybook stories) — v1.0
+- [x] Unit test coverage (56 tests) — v1.0
 
 ### Active
 
-- [ ] shadcn registry distribution (CLI-compatible)
-- [ ] Free/premium component tier separation
-- [ ] Marketing site with component showcase
-- [ ] Registry JSON schema and metadata
-- [ ] Component documentation (usage, props, examples)
+- [ ] Payment/checkout integration (Stripe or Lemon Squeezy)
+- [ ] Premium component expansion
+- [ ] SEO optimization for marketing site
 
 ### Out of Scope
 
@@ -58,10 +62,22 @@ Target customers are React developers using shadcn/ui who want higher-quality or
 
 | Decision | Rationale | Outcome |
 |----------|-----------|---------|
-| Freemium model | Lower barrier to entry, prove value before asking for payment | — Pending |
-| Complexity-based tiers | Basic (free) vs advanced/composite (paid) — clear value differentiation | — Pending |
-| Components + registry first | Get the product right before marketing push | — Pending |
-| TailwindCSS v4 only | Forward-looking, simpler maintenance, cleaner CSS | — Pending |
+| Freemium model | Lower barrier to entry, prove value before asking for payment | ✓ Good — 58 free components drive adoption |
+| Complexity-based tiers | Basic (free) vs advanced/composite (paid) — clear value differentiation | ✓ Good — clear tier separation |
+| Components + registry first | Get the product right before marketing push | ✓ Good — solid foundation before marketing |
+| TailwindCSS v4 only | Forward-looking, simpler maintenance, cleaner CSS | ✓ Good — clean implementation |
+| Separate type files as lib | Register box-types and helper-types as registry:lib items | ✓ Good — proper type installation |
+| CodeBlock as premium | Elevated from site-only to premium registry component | ✓ Good — adds premium value |
+
+## Current State
+
+**v1.0 MVP shipped 2026-01-13**
+
+- 67 registered components (58 free, 9 premium)
+- 23,013 lines of TypeScript
+- Marketing site live with component showcase
+- 56 unit tests passing
+- Storybook documentation complete
 
 ---
-*Last updated: 2026-01-13 after initialization*
+*Last updated: 2026-01-13 after v1.0 milestone*
