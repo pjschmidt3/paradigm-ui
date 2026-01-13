@@ -9,6 +9,8 @@
       "title": "Utilities",
       "description": "Core utility functions including cn() for className merging and responsive helpers",
       "dependencies": ["clsx", "tailwind-merge"],
+      "meta": { "tier": "free" },
+      "categories": ["utilities"],
       "files": [
         {
           "path": "src/lib/utils.ts",
@@ -22,6 +24,8 @@
       "title": "Box Types",
       "description": "Shared TypeScript types for Box component including responsive values and spacing",
       "dependencies": [],
+      "meta": { "tier": "free" },
+      "categories": ["utilities"],
       "files": [
         {
           "path": "src/types/shared/box.ts",
@@ -35,6 +39,8 @@
       "title": "Helper Types",
       "description": "Shared TypeScript types including sizing, flex props, and polymorphic component types",
       "dependencies": ["csstype"],
+      "meta": { "tier": "free" },
+      "categories": ["utilities"],
       "files": [
         {
           "path": "src/types/shared/helpers.ts",
@@ -49,6 +55,8 @@
       "description": "Flexible container component with semantic spacing, sizing, and styling props. Supports responsive values and polymorphic rendering.",
       "dependencies": [],
       "registryDependencies": ["utils", "box-types"],
+      "meta": { "tier": "premium" },
+      "categories": ["layout"],
       "files": [
         {
           "path": "registry/new-york/ui/box.tsx",
@@ -63,6 +71,8 @@
       "description": "Flexbox container with gap, alignment, and direction props mapped to Tailwind classes",
       "dependencies": [],
       "registryDependencies": ["utils", "helper-types"],
+      "meta": { "tier": "premium" },
+      "categories": ["layout"],
       "files": [
         {
           "path": "registry/new-york/ui/flex.tsx",
@@ -77,6 +87,8 @@
       "description": "Horizontal flex container - convenience wrapper around Flex with direction=row",
       "dependencies": [],
       "registryDependencies": ["flex", "helper-types"],
+      "meta": { "tier": "premium" },
+      "categories": ["layout"],
       "files": [
         {
           "path": "registry/new-york/ui/flex-row.tsx",
@@ -91,6 +103,8 @@
       "description": "Vertical flex container - convenience wrapper around Flex with direction=col",
       "dependencies": [],
       "registryDependencies": ["flex", "helper-types"],
+      "meta": { "tier": "premium" },
+      "categories": ["layout"],
       "files": [
         {
           "path": "registry/new-york/ui/flex-col.tsx",
@@ -105,6 +119,8 @@
       "description": "CSS Grid container with cols, rows, gap, and alignment props mapped to Tailwind classes",
       "dependencies": [],
       "registryDependencies": ["utils", "helper-types"],
+      "meta": { "tier": "premium" },
+      "categories": ["layout"],
       "files": [
         {
           "path": "registry/new-york/ui/grid.tsx",
@@ -119,6 +135,8 @@
       "description": "Semantic heading component (h1-h5) with consistent typography styles",
       "dependencies": [],
       "registryDependencies": ["utils"],
+      "meta": { "tier": "free" },
+      "categories": ["typography"],
       "files": [
         {
           "path": "registry/new-york/ui/heading.tsx",
@@ -133,6 +151,8 @@
       "description": "Typography component for body text with consistent styling",
       "dependencies": [],
       "registryDependencies": ["utils"],
+      "meta": { "tier": "free" },
+      "categories": ["typography"],
       "files": [
         {
           "path": "registry/new-york/ui/paragraph.tsx",
@@ -147,6 +167,8 @@
       "description": "Flexible button component with multiple variants (default, outlined, ghost, link, destructive), sizes, icons, and loading state",
       "dependencies": ["class-variance-authority"],
       "registryDependencies": ["utils", "helper-types"],
+      "meta": { "tier": "premium" },
+      "categories": ["form"],
       "files": [
         {
           "path": "registry/new-york/ui/button.tsx",
@@ -161,6 +183,8 @@
       "description": "Animated social media link icons with hover effects. Supports Facebook, YouTube, Instagram, GitHub, LinkedIn, Twitter/X, and Discord.",
       "dependencies": ["react-icons", "motion"],
       "registryDependencies": ["utils"],
+      "meta": { "tier": "premium" },
+      "categories": ["animation", "social"],
       "files": [
         {
           "path": "registry/new-york/ui/social-links.tsx",
@@ -175,6 +199,8 @@
       "description": "Hero section component with heading, subheading, description, and optional social links",
       "dependencies": [],
       "registryDependencies": ["utils", "heading", "paragraph", "social-links"],
+      "meta": { "tier": "premium" },
+      "categories": ["composite", "marketing"],
       "files": [
         {
           "path": "registry/new-york/ui/hero.tsx",
@@ -189,6 +215,8 @@
       "description": "Animation wrapper component that adds fade-in and slide-up entrance animation using Motion",
       "dependencies": ["motion"],
       "registryDependencies": ["helper-types"],
+      "meta": { "tier": "premium" },
+      "categories": ["animation"],
       "files": [
         {
           "path": "registry/new-york/ui/appear.tsx",
