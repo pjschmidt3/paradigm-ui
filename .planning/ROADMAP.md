@@ -55,7 +55,7 @@ Plans:
 
 Plans:
 - [x] 06-01: Button & Badge Enhancements (loading, pill, sizes) — completed 2026-01-13
-- [ ] 06-02: Avatar & Badge Polish (sizes, status, closable)
+- [x] 06-02: Avatar & Badge Polish (sizes, status, closable) — completed 2026-01-13
 
 #### Phase 7: Free Aesthetic Components
 
@@ -92,4 +92,4 @@ Plans:
 | Milestone | Phases | Plans | Status | Shipped |
 |-----------|--------|-------|--------|---------|
 | v1.0 MVP | 1-4 + 3.1 | 14/14 | Complete | 2026-01-13 |
-| v0.2.0 Library Expansion | 5-9 | 5/5+ | In progress | - |
+| v0.2.0 Library Expansion | 5-9 | 6/6+ | In progress | - |

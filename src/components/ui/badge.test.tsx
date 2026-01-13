@@ -1,4 +1,4 @@
-import { render, screen } from '@testing-library/react'
+import { fireEvent, render, screen } from '@testing-library/react'
 
 import { Badge } from './badge'
 
@@ -88,6 +88,74 @@ describe('Badge component', () => {
       const badge = container.querySelector('[data-slot="badge"]')
       expect(badge).toHaveClass('px-2.5', 'py-1', 'text-sm')
       expect(badge).toHaveClass('bg-secondary', 'text-secondary-foreground')
+    })
+  })
+
+  describe('Closable Badge (onRemove)', () => {
+    it('should render close button when onRemove provided', () => {
+      const onRemove = jest.fn()
+      const { container } = render(
+        <Badge onRemove={onRemove}>Closable</Badge>
+      )
+      const closeButton = container.querySelector('[data-slot="badge-close"]')
+      expect(closeButton).toBeInTheDocument()
+    })
+
+    it('should not render close button when onRemove not provided', () => {
+      const { container } = render(<Badge>Not Closable</Badge>)
+      const closeButton = container.querySelector('[data-slot="badge-close"]')
+      expect(closeButton).not.toBeInTheDocument()
+    })
+
+    it('should call onRemove when close button is clicked', () => {
+      const onRemove = jest.fn()
+      const { container } = render(
+        <Badge onRemove={onRemove}>Closable</Badge>
+      )
+      const closeButton = container.querySelector('[data-slot="badge-close"]')
+      fireEvent.click(closeButton!)
+      expect(onRemove).toHaveBeenCalledTimes(1)
+    })
+
+    it('should stop event propagation on close button click', () => {
+      const onRemove = jest.fn()
+      const parentClick = jest.fn()
+      const { container } = render(
+        <div onClick={parentClick}>
+          <Badge onRemove={onRemove}>Closable</Badge>
+        </div>
+      )
+      const closeButton = container.querySelector('[data-slot="badge-close"]')
+      fireEvent.click(closeButton!)
+      expect(onRemove).toHaveBeenCalled()
+      expect(parentClick).not.toHaveBeenCalled()
+    })
+
+    it('should render close button with correct size for sm badge', () => {
+      const onRemove = jest.fn()
+      const { container } = render(
+        <Badge size="sm" onRemove={onRemove}>Small</Badge>
+      )
+      const closeButton = container.querySelector('[data-slot="badge-close"]')
+      expect(closeButton).toHaveClass('size-2.5')
+    })
+
+    it('should render close button with correct size for lg badge', () => {
+      const onRemove = jest.fn()
+      const { container } = render(
+        <Badge size="lg" onRemove={onRemove}>Large</Badge>
+      )
+      const closeButton = container.querySelector('[data-slot="badge-close"]')
+      expect(closeButton).toHaveClass('size-3.5')
+    })
+
+    it('should have accessible aria-label on close button', () => {
+      const onRemove = jest.fn()
+      const { container } = render(
+        <Badge onRemove={onRemove}>Accessible</Badge>
+      )
+      const closeButton = container.querySelector('[data-slot="badge-close"]')
+      expect(closeButton).toHaveAttribute('aria-label', 'Remove')
     })
   })
 })

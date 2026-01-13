@@ -2,6 +2,7 @@ import * as React from 'react'
 
 import { Slot } from '@radix-ui/react-slot'
 import { cva, type VariantProps } from 'class-variance-authority'
+import { X } from 'lucide-react'
 
 import { cn } from '@/src/lib/utils'
 
@@ -32,15 +33,34 @@ const badgeVariants = cva(
   }
 )
 
+const closeButtonSizeClasses = {
+  sm: 'size-2.5',
+  default: 'size-3',
+  lg: 'size-3.5'
+}
+
+type BadgeProps = React.ComponentProps<'span'> &
+  VariantProps<typeof badgeVariants> & {
+    asChild?: boolean
+    onRemove?: () => void
+  }
+
 function Badge({
   asChild = false,
   className,
   size,
   variant,
+  onRemove,
+  children,
   ...props
-}: React.ComponentProps<'span'>
-  & VariantProps<typeof badgeVariants> & { asChild?: boolean }) {
+}: BadgeProps) {
   const Comp = asChild ? Slot : 'span'
+  const resolvedSize = size ?? 'default'
+
+  const handleRemove = (e: React.MouseEvent) => {
+    e.stopPropagation()
+    onRemove?.()
+  }
 
   return (
     <Comp
@@ -48,7 +68,23 @@ function Badge({
       data-size={size}
       data-slot="badge"
       {...props}
-    />
+    >
+      {children}
+      {onRemove && (
+        <button
+          type="button"
+          onClick={handleRemove}
+          className={cn(
+            'ml-1 -mr-0.5 hover:bg-black/10 dark:hover:bg-white/10 rounded-full p-0.5 cursor-pointer',
+            closeButtonSizeClasses[resolvedSize]
+          )}
+          data-slot="badge-close"
+          aria-label="Remove"
+        >
+          <X className="size-full" />
+        </button>
+      )}
+    </Comp>
   )
 }
 
