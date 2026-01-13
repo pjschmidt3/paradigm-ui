@@ -1,6 +1,6 @@
 import { render, screen } from '@testing-library/react'
 
-import { Heading } from '@/registry/new-york/ui/heading'
+import { Heading } from './heading'
 
 describe('Heading component', () => {
   describe('Basic rendering', () => {

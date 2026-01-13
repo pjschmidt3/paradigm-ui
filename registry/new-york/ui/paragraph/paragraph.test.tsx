@@ -1,6 +1,6 @@
 import { render, screen } from '@testing-library/react'
 
-import { Paragraph } from '@/registry/new-york/ui/paragraph'
+import { Paragraph } from './paragraph'
 
 describe('Paragraph component', () => {
   describe('Basic rendering', () => {

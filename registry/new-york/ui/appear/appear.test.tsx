@@ -1,7 +1,7 @@
 import { render, screen } from '@testing-library/react'
 import { ElementType } from 'react'
 
-import { Appear } from '@/registry/new-york/ui/appear'
+import { Appear } from './appear'
 
 // Mock motion/react-client to avoid animation issues in tests
 jest.mock('motion/react-client', () => ({

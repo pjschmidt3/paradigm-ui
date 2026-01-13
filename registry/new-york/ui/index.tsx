@@ -1,12 +1,11 @@
-
-export interface IndexProps {
-
-}
-
-export function Index (props: IndexProps) {
-  return (
-    <>
-      $END$
-    </>
-  )
-}
+export * from './appear'
+export * from './box'
+export * from './button'
+export * from './flex'
+export * from './flex-col'
+export * from './flex-row'
+export * from './grid'
+export * from './heading'
+export * from './hero'
+export * from './paragraph'
+export * from './social-links'

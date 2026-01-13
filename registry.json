@@ -59,7 +59,7 @@
       "categories": ["layout"],
       "files": [
         {
-          "path": "registry/new-york/ui/box.tsx",
+          "path": "registry/new-york/ui/box/box.tsx",
           "type": "registry:ui"
         }
       ]
@@ -75,7 +75,7 @@
       "categories": ["layout"],
       "files": [
         {
-          "path": "registry/new-york/ui/flex.tsx",
+          "path": "registry/new-york/ui/flex/flex.tsx",
           "type": "registry:ui"
         }
       ]
@@ -91,7 +91,7 @@
       "categories": ["layout"],
       "files": [
         {
-          "path": "registry/new-york/ui/flex-row.tsx",
+          "path": "registry/new-york/ui/flex-row/flex-row.tsx",
           "type": "registry:ui"
         }
       ]
@@ -107,7 +107,7 @@
       "categories": ["layout"],
       "files": [
         {
-          "path": "registry/new-york/ui/flex-col.tsx",
+          "path": "registry/new-york/ui/flex-col/flex-col.tsx",
           "type": "registry:ui"
         }
       ]
@@ -123,7 +123,7 @@
       "categories": ["layout"],
       "files": [
         {
-          "path": "registry/new-york/ui/grid.tsx",
+          "path": "registry/new-york/ui/grid/grid.tsx",
           "type": "registry:ui"
         }
       ]
@@ -139,7 +139,7 @@
       "categories": ["typography"],
       "files": [
         {
-          "path": "registry/new-york/ui/heading.tsx",
+          "path": "registry/new-york/ui/heading/heading.tsx",
           "type": "registry:ui"
         }
       ]
@@ -155,7 +155,7 @@
       "categories": ["typography"],
       "files": [
         {
-          "path": "registry/new-york/ui/paragraph.tsx",
+          "path": "registry/new-york/ui/paragraph/paragraph.tsx",
           "type": "registry:ui"
         }
       ]
@@ -171,7 +171,7 @@
       "categories": ["form"],
       "files": [
         {
-          "path": "registry/new-york/ui/button.tsx",
+          "path": "registry/new-york/ui/button/button.tsx",
           "type": "registry:ui"
         }
       ]
@@ -187,7 +187,7 @@
       "categories": ["animation", "social"],
       "files": [
         {
-          "path": "registry/new-york/ui/social-links.tsx",
+          "path": "registry/new-york/ui/social-links/social-links.tsx",
           "type": "registry:ui"
         }
       ]
@@ -203,7 +203,7 @@
       "categories": ["composite", "marketing"],
       "files": [
         {
-          "path": "registry/new-york/ui/hero.tsx",
+          "path": "registry/new-york/ui/hero/hero.tsx",
           "type": "registry:ui"
         }
       ]
@@ -219,7 +219,7 @@
       "categories": ["animation"],
       "files": [
         {
-          "path": "registry/new-york/ui/appear.tsx",
+          "path": "registry/new-york/ui/appear/appear.tsx",
           "type": "registry:ui"
         }
       ]

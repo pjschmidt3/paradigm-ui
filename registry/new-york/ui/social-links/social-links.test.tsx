@@ -1,7 +1,7 @@
 import { render, screen } from '@testing-library/react'
 import { ComponentType } from 'react'
 
-import { SocialLinks, SocialLink } from '@/registry/new-york/ui/social-links'
+import { SocialLinks, SocialLink } from './social-links'
 
 // Mock motion/react to avoid animation issues in tests
 jest.mock('motion/react', () => ({
