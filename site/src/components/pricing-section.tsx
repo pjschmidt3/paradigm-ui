@@ -4,6 +4,9 @@ export function PricingSection() {
   const freeTierFeatures = [
     'Layout components (Box, Flex, FlexRow, FlexCol, Grid)',
     'Typography (Heading, Paragraph)',
+    '7 React hooks (useDisclosure, useToggle, useMediaQuery, etc.)',
+    '10+ aesthetic cards (ProfileCard, StatsCard, FeatureCard)',
+    'Content components (Blockquote, List, Callout)',
     '50+ atomic UI components',
     'Full TypeScript support',
     'TailwindCSS v4 compatible'
@@ -15,7 +18,10 @@ export function PricingSection() {
     'SocialLinks component',
     'CodeBlock with copy functionality',
     'Appear animations',
-    'Button variants',
+    'Button variants (loading, sizes)',
+    'PricingTable and CTASection blocks',
+    'Portfolio blocks (ProjectCard, Timeline)',
+    'Page layout blocks (PageHeader, SectionWrapper)',
     'Priority support'
   ]
 

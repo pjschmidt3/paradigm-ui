@@ -10,10 +10,10 @@ See: .planning/PROJECT.md (updated 2026-01-13)
 ## Current Position
 
 Milestone: v0.2.0 Library Expansion
-Phase: 9 of 9 (Polish & Documentation)
+Phase: 10 of 10 (Update Marketing Site)
 Plan: 1 of 1 in current phase
-Status: Phase complete — Milestone ready for close
-Last activity: 2026-01-13 — Completed 09-01-PLAN.md
+Status: Milestone complete
+Last activity: 2026-01-14 — Completed 10-01-PLAN.md
 
 Progress: v0.2.0 ██████████ 100%
 
@@ -52,15 +52,16 @@ None.
 
 ### Roadmap Evolution
 
-- Milestone v0.2.0 created: Library expansion, 5 phases (Phase 5-9)
+- Milestone v0.2.0 created: Library expansion, 6 phases (Phase 5-10)
   - Phase 5: Building Blocks & Utilities (hooks, helpers, primitives)
   - Phase 6: Enhanced Components (improved variants)
   - Phase 7: Free Aesthetic Components (cards, navigation, content)
   - Phase 8: Premium Blocks (marketing sections, portfolio, page layouts)
   - Phase 9: Polish & Documentation (Storybook, tests, READMEs)
+  - Phase 10: Update Marketing Site (showcase new components/blocks/hooks)
 
 ## Session Continuity
 
-Last session: 2026-01-13
-Stopped at: Completed 09-01-PLAN.md (Polish & Documentation) — v0.2.0 Milestone complete
+Last session: 2026-01-14
+Stopped at: Completed 10-01-PLAN.md — v0.2.0 milestone complete
 Resume file: None

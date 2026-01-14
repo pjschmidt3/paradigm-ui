@@ -7,7 +7,7 @@ Transform the existing component library into a distributable shadcn registry wi
 ## Milestones
 
 - [v1.0 MVP](milestones/v1.0-ROADMAP.md) (Phases 1-4 + 3.1) — SHIPPED 2026-01-13
-- 🚧 **v0.2.0 Library Expansion** - Phases 5-9 (in progress)
+- 🚧 **v0.2.0 Library Expansion** - Phases 5-10 (in progress)
 
 ## Completed Milestones
 
@@ -91,9 +91,19 @@ Plans:
 Plans:
 - [x] 09-01: CodeBlock tests/stories, Hook stories, README update — completed 2026-01-13
 
+#### Phase 10: Update Marketing Site — Complete
+
+**Goal**: Update marketing site with new components, blocks, and hooks from v0.2.0
+**Depends on**: Phase 9
+**Research**: Unlikely (internal patterns)
+**Plans**: 1/1
+
+Plans:
+- [x] 10-01: Site Exports, HooksSection, Component Previews, Pricing Update — completed 2026-01-14
+
 ## Progress
 
 | Milestone | Phases | Plans | Status | Shipped |
 |-----------|--------|-------|--------|---------|
 | v1.0 MVP | 1-4 + 3.1 | 14/14 | Complete | 2026-01-13 |
-| v0.2.0 Library Expansion | 5-9 | 13/13 | Complete | 2026-01-13 |
+| v0.2.0 Library Expansion | 5-10 | 14/14 | Complete | 2026-01-14 |

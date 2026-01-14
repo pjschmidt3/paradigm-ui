@@ -1,7 +1,21 @@
 "use client"
 
+import { Zap } from "lucide-react"
 import { ComponentPreview } from "./component-preview"
-import { FlexRow, Grid, Button, Hero, Heading, Paragraph, Box, CodeBlock } from "./paradigm"
+import {
+  FlexRow,
+  Grid,
+  Button,
+  Hero,
+  Heading,
+  Paragraph,
+  Box,
+  CodeBlock,
+  ProfileCard,
+  StatsCard,
+  Callout,
+  FeatureCard
+} from "./paradigm"
 
 export function ComponentsSection() {
   return (
@@ -146,6 +160,100 @@ import { Paragraph } from "@/components/ui/paragraph"
                 code={`const greeting = 'Hello, World!'
 console.log(greeting)`}
                 language="typescript"
+              />
+            </div>
+          </ComponentPreview>
+
+          {/* ProfileCard */}
+          <ComponentPreview
+            title="ProfileCard"
+            description="Avatar, name, title, and bio card"
+            tier="free"
+            code={`import { ProfileCard } from "@/components/ui/profile-card"
+
+<ProfileCard
+  name="Jane Smith"
+  title="Senior Developer"
+  bio="Building great products"
+  avatar="/avatar.jpg"
+/>`}
+          >
+            <div className="w-full max-w-xs">
+              <ProfileCard
+                name="Jane Smith"
+                title="Senior Developer"
+                bio="Building great products with modern technologies"
+              />
+            </div>
+          </ComponentPreview>
+
+          {/* StatsCard */}
+          <ComponentPreview
+            title="StatsCard"
+            description="Metric display with trend indicator"
+            tier="free"
+            code={`import { StatsCard } from "@/components/ui/stats-card"
+
+<StatsCard
+  value="2,847"
+  label="Active Users"
+  trend={{ direction: "up", value: 12.5 }}
+/>`}
+          >
+            <div className="w-full max-w-xs">
+              <StatsCard
+                value="2,847"
+                label="Active Users"
+                trend={{ direction: "up", value: 12.5 }}
+              />
+            </div>
+          </ComponentPreview>
+
+          {/* Callout */}
+          <ComponentPreview
+            title="Callout"
+            description="Contextual alert boxes with variants"
+            tier="free"
+            code={`import { Callout } from "@/components/ui/callout"
+
+<Callout variant="info" title="Note">
+  Important information for the user.
+</Callout>
+<Callout variant="warning">Watch out!</Callout>
+<Callout variant="success">Done!</Callout>`}
+          >
+            <div className="w-full max-w-md space-y-3">
+              <Callout variant="info" title="Note">
+                Important information for users.
+              </Callout>
+              <Callout variant="warning">
+                Proceed with caution.
+              </Callout>
+              <Callout variant="success">
+                Operation completed successfully!
+              </Callout>
+            </div>
+          </ComponentPreview>
+
+          {/* FeatureCard */}
+          <ComponentPreview
+            title="FeatureCard"
+            description="Icon + title + description pattern"
+            tier="free"
+            code={`import { FeatureCard } from "@/components/ui/feature-card"
+import { Zap } from "lucide-react"
+
+<FeatureCard
+  icon={Zap}
+  title="Lightning Fast"
+  description="Optimized for performance"
+/>`}
+          >
+            <div className="w-full max-w-xs">
+              <FeatureCard
+                icon={Zap}
+                title="Lightning Fast"
+                description="Optimized for performance with minimal bundle size."
               />
             </div>
           </ComponentPreview>

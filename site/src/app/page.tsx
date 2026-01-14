@@ -1,4 +1,5 @@
 import { HeroSection } from "@/components/hero-section"
+import { HooksSection } from "@/components/hooks-section"
 import { ComponentsSection } from "@/components/components-section"
 import { PricingSection } from "@/components/pricing-section"
 import { GettingStarted } from "@/components/getting-started"
@@ -9,6 +10,9 @@ export default function Home() {
     <div className="min-h-screen">
       {/* Hero Section */}
       <HeroSection />
+
+      {/* Hooks Section */}
+      <HooksSection />
 
       {/* Components Section */}
       <ComponentsSection />
