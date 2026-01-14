@@ -7,7 +7,7 @@ import { Card, CardContent, CardHeader } from '@shadcn/card'
 import { Heading } from '@registry/heading'
 import { Paragraph } from '@registry/paragraph'
 
-const sectionWrapperVariants = cva('', {
+const sectionVariants = cva('', {
   defaultVariants: {
     background: 'default',
     divider: 'none',
@@ -40,7 +40,7 @@ const sectionWrapperVariants = cva('', {
   }
 })
 
-export interface SectionWrapperProps extends VariantProps<typeof sectionWrapperVariants> {
+export interface SectionProps extends VariantProps<typeof sectionVariants> {
   actions?: ReactNode
   children: ReactNode
   className?: string
@@ -49,7 +49,7 @@ export interface SectionWrapperProps extends VariantProps<typeof sectionWrapperV
   title?: string
 }
 
-export function SectionWrapper({
+export function Section({
   actions,
   background = 'default',
   children,
@@ -60,7 +60,7 @@ export function SectionWrapper({
   spacing = 'md',
   title,
   variant = 'default'
-}: SectionWrapperProps) {
+}: SectionProps) {
   const hasHeader = title || description || actions
 
   // Card variant uses Card component for wrapping
@@ -68,18 +68,18 @@ export function SectionWrapper({
     return (
       <section
         className={cn(
-          sectionWrapperVariants({ background, divider, spacing, variant: 'default' }),
+          sectionVariants({ background, divider, spacing, variant: 'default' }),
           className
         )}
-        data-slot="section-wrapper"
+        data-slot="section"
         id={id}
       >
-        <Card data-slot="section-wrapper-card">
+        <Card data-slot="section-card">
           {hasHeader && (
             <CardHeader className="flex flex-row items-start justify-between">
               <div className="flex flex-col gap-1.5">
                 {title && (
-                  <div data-slot="section-wrapper-title">
+                  <div data-slot="section-title">
                     <Heading level={2}>
                       {title}
                     </Heading>
@@ -88,20 +88,20 @@ export function SectionWrapper({
                 {description && (
                   <Paragraph
                     className="text-muted-foreground text-sm"
-                    data-slot="section-wrapper-description"
+                    data-slot="section-description"
                   >
                     {description}
                   </Paragraph>
                 )}
               </div>
               {actions && (
-                <div className="flex items-center gap-2" data-slot="section-wrapper-actions">
+                <div className="flex items-center gap-2" data-slot="section-actions">
                   {actions}
                 </div>
               )}
             </CardHeader>
           )}
-          <CardContent data-slot="section-wrapper-content">
+          <CardContent data-slot="section-content">
             {children}
           </CardContent>
         </Card>
@@ -113,20 +113,20 @@ export function SectionWrapper({
   return (
     <section
       className={cn(
-        sectionWrapperVariants({ background, divider, spacing, variant }),
+        sectionVariants({ background, divider, spacing, variant }),
         className
       )}
-      data-slot="section-wrapper"
+      data-slot="section"
       id={id}
     >
       {hasHeader && (
         <div
           className="mb-8 flex flex-row items-start justify-between"
-          data-slot="section-wrapper-header"
+          data-slot="section-header"
         >
           <div className="flex flex-col gap-1.5">
             {title && (
-              <div data-slot="section-wrapper-title">
+              <div data-slot="section-title">
                 <Heading level={2}>
                   {title}
                 </Heading>
@@ -135,20 +135,20 @@ export function SectionWrapper({
             {description && (
               <Paragraph
                 className="text-muted-foreground"
-                data-slot="section-wrapper-description"
+                data-slot="section-description"
               >
                 {description}
               </Paragraph>
             )}
           </div>
           {actions && (
-            <div className="flex items-center gap-2" data-slot="section-wrapper-actions">
+            <div className="flex items-center gap-2" data-slot="section-actions">
               {actions}
             </div>
           )}
         </div>
       )}
-      <div data-slot="section-wrapper-content">
+      <div data-slot="section-content">
         {children}
       </div>
     </section>

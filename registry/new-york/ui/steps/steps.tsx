@@ -13,7 +13,7 @@ export interface Step {
   description?: string
 }
 
-const stepVariants = cva(
+const stepsVariants = cva(
   [
     'flex',
     'items-center',
@@ -44,7 +44,7 @@ const stepVariants = cva(
   }
 )
 
-export interface StepIndicatorProps extends VariantProps<typeof stepVariants> {
+export interface StepsProps extends VariantProps<typeof stepsVariants> {
   /** Array of steps to display */
   steps: Step[]
 
@@ -71,11 +71,11 @@ export interface StepIndicatorProps extends VariantProps<typeof stepVariants> {
 }
 
 /**
- * StepIndicator - Visual progress indicator for multi-step processes
+ * Steps - Visual progress indicator for multi-step processes
  *
  * @example
  * // Basic usage with numbers
- * <StepIndicator
+ * <Steps
  *   steps={[
  *     { label: 'Account' },
  *     { label: 'Details' },
@@ -86,7 +86,7 @@ export interface StepIndicatorProps extends VariantProps<typeof stepVariants> {
  *
  * @example
  * // Vertical with descriptions
- * <StepIndicator
+ * <Steps
  *   orientation="vertical"
  *   steps={[
  *     { label: 'Step 1', description: 'Enter your email' },
@@ -98,20 +98,20 @@ export interface StepIndicatorProps extends VariantProps<typeof stepVariants> {
  *
  * @example
  * // Dots variant
- * <StepIndicator steps={steps} variant="dots" currentStep={2} />
+ * <Steps steps={steps} variant="dots" currentStep={2} />
  *
  * @example
  * // Icons variant (check for completed, number for current)
- * <StepIndicator steps={steps} variant="icons" currentStep={1} />
+ * <Steps steps={steps} variant="icons" currentStep={1} />
  */
-export function StepIndicator({
+export function Steps({
   className,
   currentStep = 0,
   orientation = 'horizontal',
   size,
   steps,
   variant = 'numbers'
-}: StepIndicatorProps) {
+}: StepsProps) {
   const getStepState = (index: number): 'completed' | 'current' | 'upcoming' => {
     if (index < currentStep) return 'completed'
     if (index === currentStep) return 'current'
@@ -163,7 +163,7 @@ export function StepIndicator({
               )}
             >
               {/* Circle */}
-              <div className={cn(stepVariants({ size, state }))}>
+              <div className={cn(stepsVariants({ size, state }))}>
                 {renderStepContent(index, state)}
               </div>
 
@@ -213,4 +213,4 @@ export function StepIndicator({
   )
 }
 
-export { stepVariants }
+export { stepsVariants }

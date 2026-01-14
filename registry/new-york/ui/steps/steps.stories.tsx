@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react-vite'
 
-import { StepIndicator } from './step-indicator'
+import { Steps } from './steps'
 
 const basicSteps = [
   { label: 'Account' },
@@ -38,13 +38,13 @@ const meta = {
       options: ['dots', 'numbers', 'icons']
     }
   },
-  component: StepIndicator,
+  component: Steps,
   parameters: {
     layout: 'centered'
   },
   tags: ['autodocs'],
-  title: 'Components/StepIndicator'
-} satisfies Meta<typeof StepIndicator>
+  title: 'Components/Steps'
+} satisfies Meta<typeof Steps>
 
 export default meta
 type Story = StoryObj<typeof meta>
@@ -152,15 +152,15 @@ export const VariantComparison: Story = {
     <div className="flex flex-col gap-8">
       <div>
         <p className="text-muted-foreground mb-2 text-sm">Numbers (default)</p>
-        <StepIndicator currentStep={2} steps={basicSteps} variant="numbers" />
+        <Steps currentStep={2} steps={basicSteps} variant="numbers" />
       </div>
       <div>
         <p className="text-muted-foreground mb-2 text-sm">Icons</p>
-        <StepIndicator currentStep={2} steps={basicSteps} variant="icons" />
+        <Steps currentStep={2} steps={basicSteps} variant="icons" />
       </div>
       <div>
         <p className="text-muted-foreground mb-2 text-sm">Dots</p>
-        <StepIndicator currentStep={2} steps={basicSteps} variant="dots" />
+        <Steps currentStep={2} steps={basicSteps} variant="dots" />
       </div>
     </div>
   )

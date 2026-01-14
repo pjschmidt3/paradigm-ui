@@ -1,6 +1,6 @@
 # Paradigm UI
 
-A modern, composable React component library built on Flexbox primitives and shadcn/ui architecture. 90+ production-ready components, blocks, and hooks with free and premium tiers.
+A shadcn registry of reusable, highly composable React components. Extends shadcn/ui with layout primitives, typography, animations, and marketing blocks.
 
 ## Installation
 
@@ -8,72 +8,122 @@ Install components directly via the shadcn CLI:
 
 ```bash
 # Install a free component
-npx shadcn@latest add https://paradigm-ui.dev/registry.json/heading
+npx shadcn@latest add https://paradigm-ui.dev/r/heading.json
 
 # Install a premium component
-npx shadcn@latest add https://paradigm-ui.dev/registry.json/flex
+npx shadcn@latest add https://paradigm-ui.dev/r/flex.json
 
 # Install a hook
-npx shadcn@latest add https://paradigm-ui.dev/registry.json/use-disclosure
+npx shadcn@latest add https://paradigm-ui.dev/r/use-disclosure.json
 ```
 
 Dependencies are automatically resolved - installing `hero` will also install `heading`, `paragraph`, and `social-links`.
 
-## Available Components
+## What's Included
 
-### Free Tier (68 components)
+Paradigm UI provides components that **extend** shadcn/ui - not replacements for what shadcn already offers. If you need standard components like Dialog, Dropdown, or Tabs, use shadcn directly.
 
-All standard UI components are free:
+### Layout Primitives (Premium)
 
-**Layout**: accordion, aspect-ratio, card, collapsible, resizable, scroll-area, separator
+Semantic layout components with Tailwind props:
 
-**Form**: checkbox, input, input-otp, input-group, label, radio-group, select, slider, switch, textarea, toggle, toggle-group, field, form
+| Component | Description |
+|-----------|-------------|
+| `Box` | Flexible container with spacing, sizing, and polymorphic rendering |
+| `Flex` | Flexbox container with gap, alignment, and direction props |
+| `FlexRow` | Horizontal flex container (convenience wrapper) |
+| `FlexCol` | Vertical flex container (convenience wrapper) |
+| `Grid` | CSS Grid container with cols, rows, and gap props |
 
-**Data Display**: avatar, badge, calendar, carousel, chart, kbd, table, item
+### Typography (Free)
 
-**Feedback**: alert, alert-dialog, dialog, drawer, empty, progress, skeleton, sonner, spinner
+Consistent text styling components:
 
-**Navigation**: breadcrumb, menubar, navigation-menu, pagination, sidebar, tabs
+| Component | Description |
+|-----------|-------------|
+| `Heading` | Semantic heading (h1-h5) with consistent typography |
+| `Paragraph` | Body text with consistent styling |
+| `Blockquote` | Styled quotes with variants |
+| `List` | Bullet, numbered, check, and plain list variants |
 
-**Overlay**: command, context-menu, dropdown-menu, hover-card, popover, sheet, tooltip
+### Cards (Free)
 
-**Typography**: heading, paragraph, blockquote, list
+Pre-built card variants for common use cases:
 
-**Card Variants**: profile-card, stats-card, testimonial-card, feature-card
+| Component | Description |
+|-----------|-------------|
+| `ProfileCard` | User profile with avatar, name, title, bio |
+| `StatsCard` | Statistics display with value, label, trend indicator |
+| `TestimonialCard` | Customer testimonials with quote, rating, author |
+| `FeatureCard` | Feature highlight with icon, title, description |
 
-**Content Display**: callout
+### Animation (Premium)
 
-**Navigation Components**: link-button, nav-link, steps
+Motion-powered animation components:
 
-### Premium Tier (16 components)
+| Component | Description |
+|-----------|-------------|
+| `Appear` | Fade-in/slide-up entrance animation on scroll |
+| `SocialLinks` | Animated social media icons with hover effects |
 
-Enhanced components with advanced features:
+### Navigation (Free)
 
-**Layout Primitives**: box, flex, flex-row, flex-col, grid
+Enhanced navigation components:
 
-**Animation**: appear, social-links
+| Component | Description |
+|-----------|-------------|
+| `LinkButton` | Anchor styled as button with icon support |
+| `NavLink` | Navigation link with active states and badges |
+| `Steps` | Multi-step progress indicator (dots, numbers, icons) |
 
-**Composite**: hero, button (advanced), code-block
+### Page Layout (Premium)
 
-**Portfolio**: project-card, timeline
+Page-level layout components:
 
-**Page Layout**: page-header, section
+| Component | Description |
+|-----------|-------------|
+| `PageHeader` | Title, breadcrumbs, description, actions |
+| `Section` | Page section with title, spacing, background variants |
+| `Hero` | Hero section with heading, description, social links |
 
-**Marketing Blocks**: pricing-table, cta-section
+### Data Display (Premium)
 
-### Hooks (7 hooks)
+| Component | Description |
+|-----------|-------------|
+| `CodeBlock` | Syntax highlighting with copy-to-clipboard |
+| `Timeline` | Chronological display with status indicators |
+| `ProjectCard` | Portfolio card with image, tech stack, links |
+
+### Feedback (Free)
+
+| Component | Description |
+|-----------|-------------|
+| `Callout` | Alert-style callout (info, warning, success, error) |
+
+### Button (Premium)
+
+Enhanced button with additional variants (outlined, loading state, icons).
+
+### Marketing Blocks (Premium)
+
+| Block | Description |
+|-------|-------------|
+| `PricingTable` | Responsive pricing tiers with feature lists |
+| `CTASection` | Call-to-action with layout variants (centered, split) |
+
+### Hooks (Free)
 
 Reusable React hooks for common UI patterns:
 
 | Hook | Description |
 |------|-------------|
-| `useDisclosure` | Boolean open/close state with callbacks. Ideal for modals, menus, accordions. |
-| `useToggle` | Simple boolean toggle with familiar useState-like API. |
-| `useMediaQuery` | Responsive behavior based on CSS media queries. |
-| `useIsMobile` | Detects mobile viewport (< 768px). Built on useMediaQuery. |
-| `useClickOutside` | Detects clicks outside an element. Essential for dropdowns and modals. |
-| `useScrollLock` | Prevents body scroll. Use with modals and drawers. |
-| `useFocusTrap` | Traps keyboard focus within a container. Essential for accessible modals. |
+| `useDisclosure` | Boolean open/close state with callbacks |
+| `useToggle` | Simple boolean toggle |
+| `useMediaQuery` | Responsive behavior based on CSS media queries |
+| `useIsMobile` | Detects mobile viewport (< 768px) |
+| `useClickOutside` | Detects clicks outside an element |
+| `useScrollLock` | Prevents body scroll |
+| `useFocusTrap` | Traps keyboard focus within a container |
 
 ## Quick Start
 
@@ -196,4 +246,4 @@ Built with:
 - [shadcn/ui](https://ui.shadcn.com) - Component architecture
 - [Radix UI](https://radix-ui.com) - Accessibility patterns
 - [Tailwind CSS](https://tailwindcss.com) - Utility-first styling
-- [Framer Motion](https://www.framer.com/motion/) - Animations
+- [Motion](https://motion.dev) - Animations

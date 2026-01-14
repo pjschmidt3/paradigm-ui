@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react-vite'
 
-import { SectionWrapper } from './section-wrapper'
+import { Section } from './section'
 import { Button } from '@registry/button'
 
 const meta = {
@@ -42,13 +42,13 @@ const meta = {
       options: ['default', 'card', 'inset']
     }
   },
-  component: SectionWrapper,
+  component: Section,
   parameters: {
     layout: 'padded'
   },
   tags: ['autodocs'],
-  title: 'Layout/SectionWrapper'
-} satisfies Meta<typeof SectionWrapper>
+  title: 'Layout/Section'
+} satisfies Meta<typeof Section>
 
 export default meta
 type Story = StoryObj<typeof meta>
