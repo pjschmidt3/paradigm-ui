@@ -112,9 +112,44 @@ Plans:
 - [x] 11-01: Docs Shell & Navigation (layout, sidebar, nav config) — completed 2026-01-14
 - [x] 11-02: Documentation Content Pages (getting started, components, hooks, blocks) — completed 2026-01-14
 
+#### Phase 12: Fix Sidebar
+
+**Goal**: Fix sidebar component import paths and dependencies for proper monorepo resolution
+**Depends on**: Phase 11
+**Research**: Unlikely (bug fix)
+**Plans**: 0 plans
+
+Plans:
+- [ ] TBD (run /gsd:plan-phase 12 to break down)
+
+**Details:**
+[To be added during planning]
+
+#### Phase 13: Component Landing Pages
+
+**Goal**: Create individual landing pages for each component, hook, and utility in paradigm-ui with description, installation instructions, ComponentPreview, and props documentation
+**Depends on**: Phase 12
+**Research**: Unlikely (internal patterns)
+**Plans**: 4
+
+Plans:
+- [x] 13-01: Layout Component Pages (Box, Flex, FlexRow, FlexCol, Grid, Section) — completed 2026-01-14
+- [ ] 13-02: Typography Component Pages (Heading, Paragraph, Blockquote, List, Callout) — 5 pages
+- [ ] 13-03: Card Component Pages (FeatureCard, ProfileCard, StatsCard, TestimonialCard) — 4 pages
+- [ ] 13-04: Hook Pages (useToggle, useMediaQuery, useClickOutside) — 3 pages
+
+**Details:**
+Each landing page includes:
+- Brief description of the component
+- Installation instructions:
+  1. Add `"@paradigm-ui": "https://paradigm-ui.com/r"` to components.json
+  2. Run `npx shadcn@latest add @paradigm-ui/{componentName}`
+- ComponentPreview showing the component in action (components) or code examples (hooks)
+- Props/API documentation table
+
 ## Progress
 
 | Milestone | Phases | Plans | Status | Shipped |
 |-----------|--------|-------|--------|---------|
 | v1.0 MVP | 1-4 + 3.1 | 14/14 | Complete | 2026-01-13 |
-| v0.2.0 Library Expansion | 5-11 | 16/16 | Complete | 2026-01-14 |
+| v0.2.0 Library Expansion | 5-13 | 16/? | In Progress | — |

@@ -10,12 +10,12 @@ See: .planning/PROJECT.md (updated 2026-01-13)
 ## Current Position
 
 Milestone: v0.2.0 Library Expansion
-Phase: 11 of 11 (Marketing Site Sidebar)
-Plan: 2 of 2 complete
-Status: Phase complete — Milestone complete
-Last activity: 2026-01-14 — Completed 11-02-PLAN.md (Docs Content Pages)
+Phase: 13 of 13 (Component Landing Pages)
+Plan: 1 of 4 in current phase
+Status: In progress
+Last activity: 2026-01-14 — Completed 13-01-PLAN.md (Layout Component Pages)
 
-Progress: v0.2.0 ██████████ 100%
+Progress: v0.2.0 █████████░ ~93%
 
 ## Performance Metrics (v1.0)
 
@@ -60,9 +60,11 @@ None.
   - Phase 9: Polish & Documentation (Storybook, tests, READMEs)
   - Phase 10: Update Marketing Site (showcase new components/blocks/hooks)
   - Phase 11: Marketing Site Sidebar (/docs route, shadcn-style navigation)
+- Phase 12 added: Fix sidebar
+- Phase 13 added: Component landing pages (individual pages with description, install instructions, preview, props docs)
 
 ## Session Continuity
 
 Last session: 2026-01-14
-Stopped at: Completed 11-02-PLAN.md (Docs Content Pages) — Milestone v0.2.0 complete
+Stopped at: Completed 13-01-PLAN.md (Layout Component Pages)
 Resume file: None
