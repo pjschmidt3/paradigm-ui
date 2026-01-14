@@ -7,7 +7,7 @@ Transform the existing component library into a distributable shadcn registry wi
 ## Milestones
 
 - [v1.0 MVP](milestones/v1.0-ROADMAP.md) (Phases 1-4 + 3.1) — SHIPPED 2026-01-13
-- 🚧 **v0.2.0 Library Expansion** - Phases 5-10 (in progress)
+- 🚧 **v0.2.0 Library Expansion** - Phases 5-11 (in progress)
 
 ## Completed Milestones
 
@@ -101,9 +101,20 @@ Plans:
 Plans:
 - [x] 10-01: Site Exports, HooksSection, Component Previews, Pricing Update — completed 2026-01-14
 
+#### Phase 11: Marketing Site Sidebar
+
+**Goal**: Add `/docs` route with sidebar navigation (shadcn-style) — categorized sections for Getting Started, Components, Hooks, etc.
+**Depends on**: Phase 10
+**Research**: Unlikely (uses existing Sidebar component)
+**Plans**: 2
+
+Plans:
+- [x] 11-01: Docs Shell & Navigation (layout, sidebar, nav config) — completed 2026-01-14
+- [ ] 11-02: Documentation Content Pages (getting started, components, hooks, blocks)
+
 ## Progress
 
 | Milestone | Phases | Plans | Status | Shipped |
 |-----------|--------|-------|--------|---------|
 | v1.0 MVP | 1-4 + 3.1 | 14/14 | Complete | 2026-01-13 |
-| v0.2.0 Library Expansion | 5-10 | 14/14 | Complete | 2026-01-14 |
+| v0.2.0 Library Expansion | 5-11 | 15/16 | In progress | - |

@@ -35,3 +35,22 @@ export {
   useScrollLock,
   useFocusTrap
 } from '@/src/hooks'
+
+// Sidebar components
+export {
+  Sidebar,
+  SidebarProvider,
+  SidebarContent,
+  SidebarGroup,
+  SidebarGroupLabel,
+  SidebarGroupContent,
+  SidebarMenu,
+  SidebarMenuItem,
+  SidebarMenuButton,
+  SidebarHeader,
+  SidebarFooter,
+  SidebarInset,
+  SidebarTrigger,
+  SidebarRail,
+  useSidebar
+} from '@/src/components/ui/sidebar'
