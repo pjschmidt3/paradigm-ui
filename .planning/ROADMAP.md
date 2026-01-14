@@ -110,11 +110,11 @@ Plans:
 
 Plans:
 - [x] 11-01: Docs Shell & Navigation (layout, sidebar, nav config) — completed 2026-01-14
-- [ ] 11-02: Documentation Content Pages (getting started, components, hooks, blocks)
+- [x] 11-02: Documentation Content Pages (getting started, components, hooks, blocks) — completed 2026-01-14
 
 ## Progress
 
 | Milestone | Phases | Plans | Status | Shipped |
 |-----------|--------|-------|--------|---------|
 | v1.0 MVP | 1-4 + 3.1 | 14/14 | Complete | 2026-01-13 |
-| v0.2.0 Library Expansion | 5-11 | 15/16 | In progress | - |
+| v0.2.0 Library Expansion | 5-11 | 16/16 | Complete | 2026-01-14 |
